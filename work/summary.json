@@ -8,7 +8,8 @@
     "exclude": 6
   },
   "human_decisions": {
-    "not_screened": 33
+    "not_screened": 32,
+    "include": 1
   },
   "by_stage": {
     "title_abstract": 13,

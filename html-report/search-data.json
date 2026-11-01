@@ -34,7 +34,8 @@
       "exclude": 6
     },
     "human_decisions": {
-      "not_screened": 33
+      "not_screened": 32,
+      "include": 1
     },
     "by_stage": {
       "title_abstract": 13,
@@ -1909,7 +1910,7 @@
       },
       {
         "openalex_id": "W4408859567",
-        "human_decision": "not_screened",
+        "human_decision": "include",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",

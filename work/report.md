@@ -5,6 +5,6 @@
 - full text: 15 include, 3 exclude, 2 uncertain
 - title abstract: 9 include, 1 uncertain, 3 exclude
 
-Manual decisions: 33 not_screened
+Manual decisions: 32 not_screened, 1 include
 
 See the [HTML report](../html-report/index.html) for candidates, individual reports, exact retrieval filters and M1–M3.

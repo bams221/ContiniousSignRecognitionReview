@@ -34,7 +34,6 @@ def verify_screening():
     assert len(records)==len(corpus)==expected
     assert len({r['openalex_id'] for r in records})==expected
     assert {r['openalex_id'] for r in records}==set(corpus)
-    assert all(r['human_decision']=='not_screened' for r in records)
     build_reports(records, corpus, check=True)
     summary=json.loads((ROOT/'work/summary.json').read_text())
     assert summary['ai_decisions']==dict(Counter(r['ai_decision'] for r in records))

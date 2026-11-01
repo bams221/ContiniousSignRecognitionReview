@@ -153,7 +153,11 @@ def main(check=False):
             if record['ai_decision'] == 'uncertain':
                 decision += '<p>Next: '+h(record['next_action'])+'</p>'
         human_label = {'not_screened':'Not screened','include':'Include','exclude':'Exclude','uncertain':'Uncertain'}[record['human_decision']]
-        rows.append([h(number),paper, ' · '.join(link('#query-'+q,q) for q in routes),decision,h(human_label)])
+        human_cell = h(human_label)
+        manual = record.get('manual_assessment', {})
+        if manual.get('criteria'):
+            human_cell += '<br>' + ', '.join(link('#'+c,c) for c in manual['criteria'])
+        rows.append([h(number),paper, ' · '.join(link('#query-'+q,q) for q in routes),decision,human_cell])
     sections.append('<section id="candidates"><p class="eyebrow">03 · Collected records</p><h2>Candidates</h2><p class="section-intro">Query IDs link to exact searches. AI verdicts link to short paper reports and supporting evidence. AI proposals are separate from independent manual decisions.</p>'+table(['№','Paper','Discovery routes','AI screening decision','Manual screening decision'],rows,f'All {len(records)} candidates; AI proposals by assessment stage')+'</section>')
     css = '''
 *{box-sizing:border-box}html{scroll-padding-top:24px}body{margin:0;background:#f3f5f7;color:#283642;font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
