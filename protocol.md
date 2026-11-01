@@ -8,7 +8,7 @@ Previous eligibility judgments were cleared before this screening pass. Current 
 
 M1 — Review purpose: include narrative reviews, surveys, systematic reviews, scoping reviews and mapping studies synthesizing previous research. Exclude primary method, dataset or experimental papers with background-only literature discussion.
 
-M2 — CSLR coverage: recognition of sequences of linguistic signs in continuous signing; broader SLR/translation surveys may qualify.
+M2 — CSLR coverage: Include reviews that compare at least two prior studies on recognizing sequences of linguistic signs in continuous signing, addressing methods, datasets, or evaluation. Exclude reviews with only incidental CSLR mentions or coverage limited to isolated signs, fingerspelling, or translation without qualifying recognition coverage.
 
 M3 — Vision-based scope: include video/RGB, depth and pose/skeleton approaches; exclude sensor-only reviews without vision-based CSLR coverage.
 
