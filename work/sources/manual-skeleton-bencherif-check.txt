@@ -1,0 +1,8 @@
+Primary-source inspection note (paraphrase, not a raw response)
+DOI: 10.1109/ACCESS.2021.3069714
+Source: https://www.researchgate.net/publication/350501943_Arabic_Sign_Language_Recognition_System_Using_2D_Hands_and_Body_Skeleton_Data
+Inspected: Authors' article abstract reproduced on ResearchGate
+
+The abstract describes 80 static and dynamic signs repeated by 40 signers. Its mixed results pool static and dynamic sign classes for training and testing. Interpretation: mixed refers to types of individual signs, not continuous multi-sign sentence recognition.
+
+Access: Inspected the primary article abstract reproduced on the authors' ResearchGate publication page through the web tool.

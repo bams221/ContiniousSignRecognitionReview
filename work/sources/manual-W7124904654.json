@@ -1,0 +1,17 @@
+{
+  "source_id": "manual-W7124904654",
+  "openalex_id": "W7124904654",
+  "doi": "10.51889/2959-5894.2025.92.4.018",
+  "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+  "url_role": "Publication identifier; original download URL was not supplied",
+  "acquisition": "User-supplied local PDF",
+  "original_path": "manually_downloaded_papers/recent advancements in skeleton based slr.pdf",
+  "downloaded_utc": null,
+  "imported_utc": "2026-11-01T07:57:35.756272+00:00",
+  "body": "manual-W7124904654.pdf",
+  "sha256": "218dbdb5849fd1f8641f67041f9698822d3c577fe8408e3dee5c64acaaf61ddb",
+  "text": "manual-W7124904654.txt",
+  "text_sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+  "pages": 16,
+  "extractor": "pypdf 6.21.2"
+}

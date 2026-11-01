@@ -1,0 +1,8 @@
+Primary-source inspection note (paraphrase, not a raw response)
+DOI: 10.3390/math11173729
+Source: https://www.mdpi.com/2227-7390/11/17/3729
+Inspected: Abstract; Sections 3, 3.3.4 and 4.1
+
+The abstract calls the moving signs continuous. Sections 3 and 3.3.4 describe separate class folders and clips for ten sign classes, recorded per sign. Section 4.1 evaluates sign-class predictions with classification metrics. Interpretation: this is dynamic-sign clip classification, not evidence of recognizing a sequence of linguistic signs in continuous signing.
+
+Access: Publisher article text returned in the web search result for the exact cited article; direct page request returned HTTP 429 and XML access failed. No complete HTML or PDF download was obtained.

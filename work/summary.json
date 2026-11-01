@@ -4,8 +4,8 @@
   "screened_unique_including_verification": 33,
   "ai_decisions": {
     "include": 24,
-    "uncertain": 4,
-    "exclude": 5
+    "uncertain": 3,
+    "exclude": 6
   },
   "human_decisions": {
     "not_screened": 33
@@ -17,8 +17,8 @@
   "ai_by_stage": {
     "full_text": {
       "include": 15,
-      "uncertain": 3,
-      "exclude": 2
+      "exclude": 3,
+      "uncertain": 2
     },
     "title_abstract": {
       "include": 9,

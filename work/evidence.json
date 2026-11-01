@@ -388,6 +388,106 @@
         }
       ],
       "coverage_status": "Broader review with qualifying CSLR coverage; proposed eligible after full-text assessment."
+    },
+    {
+      "openalex_id": "W7124904654",
+      "doi": "10.51889/2959-5894.2025.92.4.018",
+      "authors": "T. Sembayev; D. Akbarov",
+      "year": 2025,
+      "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+      "evidence_level": "full_text",
+      "source_ids": [
+        "manual-W7124904654",
+        "abstract-pass-takayama",
+        "manual-skeleton-buttar-check",
+        "manual-skeleton-bencherif-check"
+      ],
+      "coverage_summary": "A systematic review of skeleton-based sign recognition, focused mainly on isolated signs and model-family comparisons.",
+      "access": {
+        "status": "available_local",
+        "detail": "User-supplied PDF archived with SHA-256; original download URL and time were not supplied."
+      },
+      "claims": [
+        {
+          "source_id": "manual-W7124904654",
+          "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+          "path": "work/sources/manual-W7124904654.txt",
+          "locator": "PDF pp.1–4 (printed pp.184–187), Abstract, Introduction and Research methodology",
+          "passage": "The title, authors and DOI match the candidate. The authors present a PRISMA-guided synthesis of 19 skeleton-based SLR studies; the introduction describes body and hand keypoints extracted from RGB video. This supports M1 and M3.",
+          "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+          "kind": "paraphrase",
+          "evidence_level": "full_text",
+          "pdf_path": "work/sources/manual-W7124904654.pdf",
+          "source_manifest": "work/sources/manual-W7124904654.json"
+        },
+        {
+          "source_id": "manual-W7124904654",
+          "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+          "path": "work/sources/manual-W7124904654.txt",
+          "locator": "PDF p.10 (printed p.193), Table 3 reference [6]; p.13 (printed p.196), Quantitative meta-analysis and Table 5; p.16, references",
+          "passage": "Table 3 identifies Takayama et al. (2022), reference [6], as continuous/online recognition. The quantitative synthesis explicitly states that all continuous results come from one study. Table 5 compares its offline and two online decoding settings, each with k=1; these are not distinct prior studies.",
+          "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+          "kind": "paraphrase",
+          "evidence_level": "full_text",
+          "pdf_path": "work/sources/manual-W7124904654.pdf",
+          "source_manifest": "work/sources/manual-W7124904654.json"
+        },
+        {
+          "source_id": "manual-W7124904654",
+          "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+          "path": "work/sources/manual-W7124904654.txt",
+          "locator": "PDF pp.9–11 (printed pp.192–194), Table 3 references [8] and [11]; pp.6–8, dataset overview and Table 2; pp.12–15, taxonomy, synthesis and discussion",
+          "passage": "The comparison labels Buttar et al. [8] and Bencherif et al. [11] as isolated SLR despite continuous-landmarks and mixed-sequence wording in their metrics. Dataset and discussion sections do not identify a second distinct CSLR study for comparison. A comparison of two qualifying CSLR studies was not found in the inspected full review.",
+          "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+          "kind": "paraphrase",
+          "evidence_level": "full_text",
+          "pdf_path": "work/sources/manual-W7124904654.pdf",
+          "source_manifest": "work/sources/manual-W7124904654.json"
+        },
+        {
+          "source_id": "manual-W7124904654",
+          "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+          "path": "work/sources/manual-W7124904654.txt",
+          "locator": "PDF p.5 (printed p.188), Results; p.1 Abstract; p.13 Table 5",
+          "passage": "The Results paragraph states that three works address continuous recognition, but does not identify them. This conflicts with the abstract and explicit single-study synthesis. The unsupported aggregate count is recorded as a reporting inconsistency, not counted as three distinct studies.",
+          "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+          "kind": "paraphrase",
+          "evidence_level": "full_text",
+          "pdf_path": "work/sources/manual-W7124904654.pdf",
+          "source_manifest": "work/sources/manual-W7124904654.json"
+        },
+        {
+          "source_id": "manual-skeleton-buttar-check",
+          "url": "https://www.mdpi.com/2227-7390/11/17/3729",
+          "path": "work/sources/manual-skeleton-buttar-check.txt",
+          "locator": "Primary cited paper: Abstract; Sections 3, 3.3.4 and 4.1; publisher text inspected via web search",
+          "passage": "Despite continuous terminology, the methods describe separately labelled sign clips and per-class evaluation. Our interpretation is dynamic-sign classification, not a second qualifying CSLR study.",
+          "sha256": "2a47ee9af6636ae2365d0b432ef919ed8fcad093bd63a862a5ac7aa0699d0952",
+          "kind": "paraphrase",
+          "evidence_level": "full_text"
+        },
+        {
+          "source_id": "manual-skeleton-bencherif-check",
+          "url": "https://www.researchgate.net/publication/350501943_Arabic_Sign_Language_Recognition_System_Using_2D_Hands_and_Body_Skeleton_Data",
+          "path": "work/sources/manual-skeleton-bencherif-check.txt",
+          "locator": "Primary cited paper abstract reproduced on ResearchGate",
+          "passage": "The mixed evaluation pools static and dynamic sign classes from an 80-sign dataset; it does not establish multi-sign continuous sequence recognition.",
+          "sha256": "7657a351a5bb51a3c8734b2bafd1762be871247d80140de60e2a7bb600d8287e",
+          "kind": "paraphrase",
+          "evidence_level": "abstract_only"
+        }
+      ],
+      "coverage_status": {
+        "full_text": "assessed",
+        "ai_decision": "exclude",
+        "failed_criteria": [
+          "M2"
+        ],
+        "classification": null
+      },
+      "reporting_issues": [
+        "The Results paragraph claims three continuous studies without naming them; the abstract and Table 5 explicitly identify a single-study continuous synthesis. This reporting inconsistency remains; exclusion is based on identifiable study coverage under M2."
+      ]
     }
   ],
   "gap_hypotheses": []

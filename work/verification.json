@@ -5,8 +5,8 @@
   "ai_by_stage": {
     "full_text": {
       "include": 15,
-      "uncertain": 3,
-      "exclude": 2
+      "exclude": 3,
+      "uncertain": 2
     },
     "title_abstract": {
       "include": 9,

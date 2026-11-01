@@ -1,0 +1,14 @@
+{
+  "source_id": "manual-skeleton-buttar-check",
+  "openalex_id": "W7124904654",
+  "relation": "Cited-study task verification; not a new candidate",
+  "doi": "10.3390/math11173729",
+  "url": "https://www.mdpi.com/2227-7390/11/17/3729",
+  "inspected_utc": "2026-11-01T07:59:28.358436+00:00",
+  "evidence_level": "full_text",
+  "locator": "Abstract; Sections 3, 3.3.4 and 4.1",
+  "record_type": "Web inspection paraphrase; not an archived publisher response",
+  "access": "Publisher article text returned in the web search result for the exact cited article; direct page request returned HTTP 429 and XML access failed. No complete HTML or PDF download was obtained.",
+  "body": "manual-skeleton-buttar-check.txt",
+  "sha256": "2a47ee9af6636ae2365d0b432ef919ed8fcad093bd63a862a5ac7aa0699d0952"
+}

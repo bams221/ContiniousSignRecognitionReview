@@ -1,0 +1,14 @@
+{
+  "source_id": "manual-skeleton-bencherif-check",
+  "openalex_id": "W7124904654",
+  "relation": "Cited-study task verification; not a new candidate",
+  "doi": "10.1109/ACCESS.2021.3069714",
+  "url": "https://www.researchgate.net/publication/350501943_Arabic_Sign_Language_Recognition_System_Using_2D_Hands_and_Body_Skeleton_Data",
+  "inspected_utc": "2026-11-01T07:59:28.358436+00:00",
+  "evidence_level": "abstract_only",
+  "locator": "Authors' article abstract reproduced on ResearchGate",
+  "record_type": "Web inspection paraphrase; not an archived publisher response",
+  "access": "Inspected the primary article abstract reproduced on the authors' ResearchGate publication page through the web tool.",
+  "body": "manual-skeleton-bencherif-check.txt",
+  "sha256": "7657a351a5bb51a3c8734b2bafd1762be871247d80140de60e2a7bb600d8287e"
+}

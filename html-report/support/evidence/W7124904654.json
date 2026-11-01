@@ -7,50 +7,37 @@
   },
   "openalex_id": "W7124904654",
   "human_decision": "not_screened",
-  "ai_decision": "uncertain",
+  "ai_decision": "exclude",
   "stage": "full_text",
   "evidence_level": "full_text",
   "source_ids": [
     "screen2-W7124904654-web",
     "abstract-pass-skeleton",
-    "abstract-pass-takayama"
+    "abstract-pass-takayama",
+    "manual-W7124904654",
+    "manual-skeleton-buttar-check",
+    "manual-skeleton-bencherif-check"
   ],
-  "description": "A systematic review of skeleton-based recognition that compares model families and datasets, mainly for isolated signs.",
-  "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved.",
-  "failed_criteria": [],
+  "description": "A systematic review of skeleton-based sign recognition, focused mainly on isolated signs and model-family comparisons.",
+  "reason": "Fails M2: Table 5 (p.13) compares three decoding settings from one CSLR study, not distinct studies. Table 3 and checks of the ambiguous cited methods do not establish a second qualifying CSLR study. M1 and M3 pass.",
+  "failed_criteria": [
+    "M2"
+  ],
   "criteria": {
     "M1": {
       "status": "pass",
-      "reason": "Methods describe systematic selection and synthesis."
+      "reason": "The abstract and methodology explicitly synthesize prior skeleton-based recognition research."
     },
     "M2": {
-      "status": "uncertain",
-      "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
+      "status": "fail",
+      "reason": "Only Takayama et al. (2022) is identified as a qualifying CSLR study. Table 5 compares settings within it; the ambiguous Buttar and Bencherif entries concern individual-sign classification. No comparison of two distinct CSLR studies was found."
     },
     "M3": {
       "status": "pass",
-      "reason": "Input is body/hand pose from visual data."
+      "reason": "The review covers body and hand pose/skeleton keypoints extracted from visual RGB data."
     }
   },
   "evidence": [
-    {
-      "source_id": "screen2-W7124904654-web",
-      "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
-      "path": "work/sources/screen2-W7124904654-web.txt",
-      "locator": "PDF pp.5,9–11,13; Results, Tables3 and5",
-      "passage": "Results say three continuous works; Table3 labels one row continuous/online, while another isolated row mentions a continuous pipeline; Table5 explicitly reports one study with three decoding settings.",
-      "sha256": "1be3b43a4d2b0f83883f2b47b03465c8ab6f0ba7ac2bcccb8230b325a172085c",
-      "kind": "paraphrase"
-    },
-    {
-      "source_id": "abstract-pass-skeleton",
-      "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
-      "locator": "PDF abstract p.1; Table5 p.13; references [6] and [8] p.16",
-      "passage": "The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved.",
-      "path": "work/sources/abstract-pass-skeleton.txt",
-      "sha256": "bfb6344fb0020c2e90437612451000104c1016b592520b83da6d70d0a1adc028",
-      "kind": "paraphrase"
-    },
     {
       "source_id": "abstract-pass-takayama",
       "url": "https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124",
@@ -59,16 +46,82 @@
       "path": "work/sources/abstract-pass-takayama.txt",
       "sha256": "24d585a8e953ca381efacde1406a055ca7e8729c9a58481f6fc517b070e682b1",
       "kind": "paraphrase"
+    },
+    {
+      "source_id": "manual-W7124904654",
+      "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+      "path": "work/sources/manual-W7124904654.txt",
+      "locator": "PDF pp.1–4 (printed pp.184–187), Abstract, Introduction and Research methodology",
+      "passage": "The title, authors and DOI match the candidate. The authors present a PRISMA-guided synthesis of 19 skeleton-based SLR studies; the introduction describes body and hand keypoints extracted from RGB video. This supports M1 and M3.",
+      "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+      "kind": "paraphrase",
+      "evidence_level": "full_text",
+      "pdf_path": "work/sources/manual-W7124904654.pdf",
+      "source_manifest": "work/sources/manual-W7124904654.json"
+    },
+    {
+      "source_id": "manual-W7124904654",
+      "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+      "path": "work/sources/manual-W7124904654.txt",
+      "locator": "PDF p.10 (printed p.193), Table 3 reference [6]; p.13 (printed p.196), Quantitative meta-analysis and Table 5; p.16, references",
+      "passage": "Table 3 identifies Takayama et al. (2022), reference [6], as continuous/online recognition. The quantitative synthesis explicitly states that all continuous results come from one study. Table 5 compares its offline and two online decoding settings, each with k=1; these are not distinct prior studies.",
+      "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+      "kind": "paraphrase",
+      "evidence_level": "full_text",
+      "pdf_path": "work/sources/manual-W7124904654.pdf",
+      "source_manifest": "work/sources/manual-W7124904654.json"
+    },
+    {
+      "source_id": "manual-W7124904654",
+      "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+      "path": "work/sources/manual-W7124904654.txt",
+      "locator": "PDF pp.9–11 (printed pp.192–194), Table 3 references [8] and [11]; pp.6–8, dataset overview and Table 2; pp.12–15, taxonomy, synthesis and discussion",
+      "passage": "The comparison labels Buttar et al. [8] and Bencherif et al. [11] as isolated SLR despite continuous-landmarks and mixed-sequence wording in their metrics. Dataset and discussion sections do not identify a second distinct CSLR study for comparison. A comparison of two qualifying CSLR studies was not found in the inspected full review.",
+      "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+      "kind": "paraphrase",
+      "evidence_level": "full_text",
+      "pdf_path": "work/sources/manual-W7124904654.pdf",
+      "source_manifest": "work/sources/manual-W7124904654.json"
+    },
+    {
+      "source_id": "manual-W7124904654",
+      "url": "https://doi.org/10.51889/2959-5894.2025.92.4.018",
+      "path": "work/sources/manual-W7124904654.txt",
+      "locator": "PDF p.5 (printed p.188), Results; p.1 Abstract; p.13 Table 5",
+      "passage": "The Results paragraph states that three works address continuous recognition, but does not identify them. This conflicts with the abstract and explicit single-study synthesis. The unsupported aggregate count is recorded as a reporting inconsistency, not counted as three distinct studies.",
+      "sha256": "182eada83e1a7cf0b214a4ac0ee26f30b7afd0d08bdcffae3de3aacff137203d",
+      "kind": "paraphrase",
+      "evidence_level": "full_text",
+      "pdf_path": "work/sources/manual-W7124904654.pdf",
+      "source_manifest": "work/sources/manual-W7124904654.json"
+    },
+    {
+      "source_id": "manual-skeleton-buttar-check",
+      "url": "https://www.mdpi.com/2227-7390/11/17/3729",
+      "path": "work/sources/manual-skeleton-buttar-check.txt",
+      "locator": "Primary cited paper: Abstract; Sections 3, 3.3.4 and 4.1; publisher text inspected via web search",
+      "passage": "Despite continuous terminology, the methods describe separately labelled sign clips and per-class evaluation. Our interpretation is dynamic-sign classification, not a second qualifying CSLR study.",
+      "sha256": "2a47ee9af6636ae2365d0b432ef919ed8fcad093bd63a862a5ac7aa0699d0952",
+      "kind": "paraphrase",
+      "evidence_level": "full_text"
+    },
+    {
+      "source_id": "manual-skeleton-bencherif-check",
+      "url": "https://www.researchgate.net/publication/350501943_Arabic_Sign_Language_Recognition_System_Using_2D_Hands_and_Body_Skeleton_Data",
+      "path": "work/sources/manual-skeleton-bencherif-check.txt",
+      "locator": "Primary cited paper abstract reproduced on ResearchGate",
+      "passage": "The mixed evaluation pools static and dynamic sign classes from an 80-sign dataset; it does not establish multi-sign continuous sequence recognition.",
+      "sha256": "7657a351a5bb51a3c8734b2bafd1762be871247d80140de60e2a7bb600d8287e",
+      "kind": "paraphrase",
+      "evidence_level": "abstract_only"
     }
   ],
-  "unresolved_issues": [
-    "Contradictory continuous-study counts and task classifications.",
-    "Direct PDF archival attempts timed out; saved web-inspection notes provide locators.",
-    "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
-  ],
-  "next_action": "Obtain Buttar’s abstract (10.3390/math11173729) and reconcile the review’s study counts.",
+  "unresolved_issues": [],
+  "next_action": "",
   "classification": null,
-  "qualifying_studies": [],
+  "qualifying_studies": [
+    "Takayama, Benitez-Garcia and Takahashi (2022), Skeleton-based online sign language recognition using monotonic attention"
+  ],
   "assessments": [
     {
       "stage": "title_abstract",
@@ -81,17 +134,19 @@
     }
   ],
   "assessment_metadata": {
-    "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+    "assessed_utc": "2026-11-01T07:59:28.447460+00:00",
     "agent_batch": "batch2.json",
     "model": "GPT-6 / Codex (exact runtime version unavailable)",
     "protocol": "protocol.md",
-    "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+    "protocol_sha256": "b16ed3b98321e7f994190c5506cb92adbde6ff2c91df6290d4bc7818f4b2e78e",
     "prompt": "prompts/ai-screening-prompt.md",
     "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
     "execution_instructions": "prompts/screening-execution.md",
     "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
-    "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
-    "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+    "lead_review": "M1 and M3 pass; proposed full-text exclusion under project-specific M2 threshold. Manual verdict unchanged.",
+    "last_reassessment_utc": "2026-11-01T07:59:28.447460+00:00",
+    "current_method": "Single-agent reassessment of supplied full PDF; Tables 3 and 5 visually checked. Targeted primary-source checks of cited Buttar and Bencherif papers; no subagents or discovery searches.",
+    "evidence_scope": "Full supplied review, with focus on pp.1–5 and 6–16. Buttar abstract and relevant methods/evaluation excerpts via indexed publisher text; Bencherif abstract via author publication page. Benchmark results not independently reproduced."
   },
   "reassessment_history": [
     {
@@ -164,6 +219,106 @@
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
         }
       }
+    },
+    {
+      "recorded_utc": "2026-11-01T07:59:28.447460+00:00",
+      "previous_assessment": {
+        "openalex_id": "W7124904654",
+        "human_decision": "not_screened",
+        "ai_decision": "uncertain",
+        "stage": "full_text",
+        "evidence_level": "full_text",
+        "source_ids": [
+          "screen2-W7124904654-web",
+          "abstract-pass-skeleton",
+          "abstract-pass-takayama"
+        ],
+        "description": "A systematic review of skeleton-based recognition that compares model families and datasets, mainly for isolated signs.",
+        "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved.",
+        "failed_criteria": [],
+        "criteria": {
+          "M1": {
+            "status": "pass",
+            "reason": "Methods describe systematic selection and synthesis."
+          },
+          "M2": {
+            "status": "uncertain",
+            "reason": "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
+          },
+          "M3": {
+            "status": "pass",
+            "reason": "Input is body/hand pose from visual data."
+          }
+        },
+        "evidence": [
+          {
+            "source_id": "screen2-W7124904654-web",
+            "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+            "path": "work/sources/screen2-W7124904654-web.txt",
+            "locator": "PDF pp.5,9–11,13; Results, Tables3 and5",
+            "passage": "Results say three continuous works; Table3 labels one row continuous/online, while another isolated row mentions a continuous pipeline; Table5 explicitly reports one study with three decoding settings.",
+            "sha256": "1be3b43a4d2b0f83883f2b47b03465c8ab6f0ba7ac2bcccb8230b325a172085c",
+            "kind": "paraphrase"
+          },
+          {
+            "source_id": "abstract-pass-skeleton",
+            "url": "https://bulletin-phmath.kaznpu.kz/index.php/ped/article/download/2423/1208/16200",
+            "locator": "PDF abstract p.1; Table5 p.13; references [6] and [8] p.16",
+            "passage": "The PDF abstract and Table5 identify a single continuous/online study with multiple decoding settings. Reference [6] is Takayama et al. (10.5220/0010899400003124); [8] is Buttar et al. (10.3390/math11173729). The previously noted inconsistent study counts remain unresolved.",
+            "path": "work/sources/abstract-pass-skeleton.txt",
+            "sha256": "bfb6344fb0020c2e90437612451000104c1016b592520b83da6d70d0a1adc028",
+            "kind": "paraphrase"
+          },
+          {
+            "source_id": "abstract-pass-takayama",
+            "url": "https://www.scitepress.org/Link.aspx?doi=10.5220%2F0010899400003124",
+            "locator": "Publisher abstract",
+            "passage": "Takayama and colleagues evaluate skeleton-based online continuous word recognition using monotonic attention on isolated-word and sentence videos. The abstract confirms this study's CSLR task; it does not establish a second distinct study in the review.",
+            "path": "work/sources/abstract-pass-takayama.txt",
+            "sha256": "24d585a8e953ca381efacde1406a055ca7e8729c9a58481f6fc517b070e682b1",
+            "kind": "paraphrase"
+          }
+        ],
+        "unresolved_issues": [
+          "Contradictory continuous-study counts and task classifications.",
+          "Direct PDF archival attempts timed out; saved web-inspection notes provide locators.",
+          "M2 remains unresolved. The PDF abstract and Table 5 identify one continuous study; Takayama’s abstract confirms that task. Buttar’s abstract was inaccessible, so the conflicting study count cannot be resolved."
+        ],
+        "next_action": "Obtain Buttar’s abstract (10.3390/math11173729) and reconcile the review’s study counts.",
+        "classification": null,
+        "qualifying_studies": [],
+        "assessments": [
+          {
+            "stage": "title_abstract",
+            "ai_decision": "include",
+            "reason": "Retain for full-text assessment because review purpose and possible vision-based CSLR coverage are supported.",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "screen2-W7124904654-web"
+            ]
+          }
+        ],
+        "assessment_metadata": {
+          "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+          "agent_batch": "batch2.json",
+          "model": "GPT-6 / Codex (exact runtime version unavailable)",
+          "protocol": "protocol.md",
+          "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+          "prompt": "prompts/ai-screening-prompt.md",
+          "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+          "execution_instructions": "prompts/screening-execution.md",
+          "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+          "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+          "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+        },
+        "abstract_followup": {
+          "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+          "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+          "outcome": "Verdict retained",
+          "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+          "full_text_download_retried": false
+        }
+      }
     }
   ],
   "abstract_followup": {
@@ -172,5 +327,9 @@
     "outcome": "Verdict retained",
     "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
     "full_text_download_retried": false
-  }
+  },
+  "reporting_issues": [
+    "The Results paragraph claims three continuous studies without naming them; the abstract and Table 5 explicitly identify a single-study continuous synthesis. This reporting inconsistency remains; exclusion is based on identifiable study coverage under M2."
+  ],
+  "resolution_note": "The supplied full PDF resolves the archival limitation. Primary-source inspection resolves the previously ambiguous Buttar entry as dynamic-sign clip classification under this project's CSLR definition; Bencherif's mixed results concern static and dynamic classes. The two-study comparison requirement is not met."
 }

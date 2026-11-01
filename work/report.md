@@ -2,7 +2,7 @@
 
 33 candidates. AI decisions are proposals; manual decisions remain independent.
 
-- full text: 15 include, 3 uncertain, 2 exclude
+- full text: 15 include, 3 exclude, 2 uncertain
 - title abstract: 9 include, 1 uncertain, 3 exclude
 
 Manual decisions: 33 not_screened
