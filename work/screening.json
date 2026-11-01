@@ -260,26 +260,27 @@
       "openalex_id": "W3046952127",
       "human_decision": "not_screened",
       "ai_decision": "include",
-      "stage": "title_abstract",
-      "evidence_level": "abstract_only",
+      "stage": "full_text",
+      "evidence_level": "full_text",
       "source_ids": [
-        "batch0-alt-W3046952127"
+        "batch0-alt-W3046952127",
+        "manual-W3046952127"
       ],
-      "description": "Survey of visual deep-learning models for isolated and continuous sign recognition.",
-      "reason": "Repository abstract explicitly supports review purpose, continuous recognition and vision scope; advance to full text.",
+      "description": "A broad survey of visual deep-learning approaches to isolated and continuous sign recognition, covering input modalities, datasets, methods and open challenges.",
+      "reason": "Meets M1–M3 as a broader review with qualifying CSLR coverage. Section 7 and Table 8 (pp.18–20) compare Pu et al. (2018) and Cui et al. (2019) by methods, datasets and reported error rates, meeting the project-specific two-study threshold.",
       "failed_criteria": [],
       "criteria": {
         "M1": {
           "status": "pass",
-          "reason": "Synthesizes prior research."
+          "reason": "The abstract and introduction explicitly synthesize prior vision-based deep-learning research; Sections 4–8 review existing methods."
         },
         "M2": {
           "status": "pass",
-          "reason": "CSLR coverage is supported at the assessed stage."
+          "reason": "Section 7 and Table 8 compare at least two distinct prior CSLR studies, Pu et al. (2018) and Cui et al. (2019), satisfying the full-text threshold."
         },
         "M3": {
           "status": "pass",
-          "reason": "Includes visual recognition approaches."
+          "reason": "Sections 7.1 and 7.3 and Table 8 explicitly cover RGB video and RGB/optical-flow approaches to CSLR."
         }
       },
       "evidence": [
@@ -291,28 +292,110 @@
           "passage": "Taxonomy covers isolated and continuous recognition, datasets, applications and hybrid vision-based deep-learning models.",
           "sha256": "426fc1c06699f9b1b91ad470e68baa3b3df348fb065209147ac1bf4ee88b8f1d",
           "kind": "paraphrase"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.1, Abstract; p.3, Introduction and Section 2",
+          "passage": "The authors explicitly review vision-based deep-learning approaches and propose a taxonomy covering isolated and continuous sign recognition, datasets, applications and research challenges.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF pp.18–19, Section 7, especially Sections 7.1 and 7.3; p.20, Table 8; pp.26–27, references",
+          "passage": "Section 7 discusses prior continuous-recognition methods. Section 7.1 describes Pu et al. (2018), combining 3D-ResNet, dilated CNN and CTC on RGB video; Section 7.3 describes Cui et al. (2019), combining CNN/Bi-LSTM, iterative training, RGB and optical flow. Table 8 compares their modalities, models, datasets and reported error rates, including PHOENIX-Weather 2014 and SIGNUM. These are two distinct prior CSLR studies.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.19, Section 7.5; p.20, Table 8",
+          "passage": "The discussion distinguishes isolated recognition from sequence recognition and temporal alignment. It identifies feature extraction and alignment as central issues and proposes attention, multiple modalities, structured spatiotemporal models and sign-language prior knowledge as future directions. Table 8 includes visual RGB-video methods.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.1, publication header and DOI",
+          "passage": "The title, authors and DOI match candidate W3046952127. The PDF gives online availability as 6 August 2020 and the journal volume as Expert Systems With Applications 164 (2021), article 113794. Both dates satisfy the project publication window; the saved candidate year 2020 is retained.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
         }
       ],
-      "unresolved_issues": [
-        "Full text not obtained; publisher response was a redirect page."
+      "unresolved_issues": [],
+      "next_action": "",
+      "classification": "broader",
+      "qualifying_studies": [
+        "Pu, Zhou and Li (2018), Dilated convolutional network with iterative optimization for continuous sign language recognition",
+        "Cui, Liu and Zhang (2019), A deep neural framework for continuous sign language recognition by iterative training"
       ],
-      "next_action": "Obtain full text and verify the two-study CSLR threshold.",
-      "classification": null,
-      "qualifying_studies": [],
-      "assessments": [],
+      "assessments": [
+        {
+          "stage": "title_abstract",
+          "ai_decision": "include",
+          "evidence_level": "abstract_only",
+          "source_ids": [
+            "batch0-alt-W3046952127"
+          ],
+          "reason": "Repository abstract explicitly supports review purpose, continuous recognition and vision scope; advance to full text.",
+          "evidence": [
+            {
+              "source_id": "batch0-alt-W3046952127",
+              "url": "https://vbn.aau.dk/en/publications/sign-language-recognition-a-deep-survey/",
+              "path": "work/sources/batch0-alt-W3046952127.txt",
+              "locator": "Abstract",
+              "passage": "Taxonomy covers isolated and continuous recognition, datasets, applications and hybrid vision-based deep-learning models.",
+              "sha256": "426fc1c06699f9b1b91ad470e68baa3b3df348fb065209147ac1bf4ee88b8f1d",
+              "kind": "paraphrase"
+            }
+          ],
+          "criteria": {
+            "M1": {
+              "status": "pass",
+              "reason": "Synthesizes prior research."
+            },
+            "M2": {
+              "status": "pass",
+              "reason": "CSLR coverage is supported at the assessed stage."
+            },
+            "M3": {
+              "status": "pass",
+              "reason": "Includes visual recognition approaches."
+            }
+          }
+        }
+      ],
       "decoded_abstract": "",
       "assessment_metadata": {
-        "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+        "assessed_utc": "2026-11-01T05:31:49.621108+00:00",
         "agent_batch": "batch0.json",
         "model": "GPT-6 / Codex (exact runtime version unavailable)",
         "protocol": "protocol.md",
-        "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+        "protocol_sha256": "67a6667ad709615e61e05c215daf066db84d38442bb1d3ba154576e10944613b",
         "prompt": "prompts/ai-screening-prompt.md",
         "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
         "execution_instructions": "prompts/screening-execution.md",
         "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
-        "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
-        "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+        "lead_review": "M1–M3 and project-specific full-text threshold assessed from supplied PDF; AI proposal only.",
+        "last_reassessment_utc": "2026-11-01T05:31:49.621108+00:00",
+        "current_method": "Single-agent full-text assessment of user-supplied PDF; Section 7 and Table 8 inspected; Table 8 visually checked. No subagents or network requests.",
+        "evidence_scope": "PDF pp.1–3, 18–20 and cited-study references on pp.26–27; eligibility assessment, not independent validation of reported benchmark results."
       },
       "reassessment_history": [
         {
@@ -373,6 +456,75 @@
               "execution_instructions": "prompts/screening-execution.md",
               "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
               "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+            }
+          }
+        },
+        {
+          "recorded_utc": "2026-11-01T05:31:49.621108+00:00",
+          "previous_assessment": {
+            "openalex_id": "W3046952127",
+            "human_decision": "not_screened",
+            "ai_decision": "include",
+            "stage": "title_abstract",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "batch0-alt-W3046952127"
+            ],
+            "description": "Survey of visual deep-learning models for isolated and continuous sign recognition.",
+            "reason": "Repository abstract explicitly supports review purpose, continuous recognition and vision scope; advance to full text.",
+            "failed_criteria": [],
+            "criteria": {
+              "M1": {
+                "status": "pass",
+                "reason": "Synthesizes prior research."
+              },
+              "M2": {
+                "status": "pass",
+                "reason": "CSLR coverage is supported at the assessed stage."
+              },
+              "M3": {
+                "status": "pass",
+                "reason": "Includes visual recognition approaches."
+              }
+            },
+            "evidence": [
+              {
+                "source_id": "batch0-alt-W3046952127",
+                "url": "https://vbn.aau.dk/en/publications/sign-language-recognition-a-deep-survey/",
+                "path": "work/sources/batch0-alt-W3046952127.txt",
+                "locator": "Abstract",
+                "passage": "Taxonomy covers isolated and continuous recognition, datasets, applications and hybrid vision-based deep-learning models.",
+                "sha256": "426fc1c06699f9b1b91ad470e68baa3b3df348fb065209147ac1bf4ee88b8f1d",
+                "kind": "paraphrase"
+              }
+            ],
+            "unresolved_issues": [
+              "Full text not obtained; publisher response was a redirect page."
+            ],
+            "next_action": "Obtain full text and verify the two-study CSLR threshold.",
+            "classification": null,
+            "qualifying_studies": [],
+            "assessments": [],
+            "decoded_abstract": "",
+            "assessment_metadata": {
+              "assessed_utc": "2026-10-31T16:55:01.613245+00:00",
+              "agent_batch": "batch0.json",
+              "model": "GPT-6 / Codex (exact runtime version unavailable)",
+              "protocol": "protocol.md",
+              "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+              "prompt": "prompts/ai-screening-prompt.md",
+              "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+              "execution_instructions": "prompts/screening-execution.md",
+              "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+              "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+              "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+            },
+            "abstract_followup": {
+              "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+              "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+              "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+              "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+              "full_text_download_retried": false
             }
           }
         }
@@ -899,26 +1051,27 @@
       "openalex_id": "W4398763293",
       "human_decision": "not_screened",
       "ai_decision": "include",
-      "stage": "title_abstract",
-      "evidence_level": "abstract_only",
+      "stage": "full_text",
+      "evidence_level": "full_text",
       "source_ids": [
-        "screen2-alt-W4398763293"
+        "screen2-alt-W4398763293",
+        "manual-W4398763293"
       ],
-      "description": "The abstract describes a 25-year CSLR review organizing 126 studies by modalities, methods, datasets and performance, including spatial, temporal and alignment approaches.",
-      "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+      "description": "A dedicated CSLR review organizing 126 studies by methods, modalities, datasets and performance, with discussion of data and model challenges.",
+      "reason": "Meets M1–M3 as a dedicated CSLR review. Section 4.2 and Table 8 (pp.15–20) compare SubUNets (Camgoz et al., 2017) and Cui et al. (2017) by visual architectures, datasets and word error rates, meeting the project-specific two-study threshold.",
       "failed_criteria": [],
       "criteria": {
         "M1": {
           "status": "pass",
-          "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+          "reason": "The abstract and introduction explicitly synthesize prior CSLR research; Sections 4–6 review methods, compare results and discuss research gaps."
         },
         "M2": {
           "status": "pass",
-          "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+          "reason": "Section 4.2 and Table 8 compare distinct prior CSLR studies, including SubUNets and Cui et al. (2017), satisfying the full-text threshold."
         },
         "M3": {
           "status": "pass",
-          "reason": "Video modalities and visual cues are explicit."
+          "reason": "Sections 4.2.2–4.2.4 and Table 8 explicitly discuss and compare vision-based CSLR using RGB frames, cropped hands and pose information."
         }
       },
       "evidence": [
@@ -930,27 +1083,109 @@
           "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries.",
           "sha256": "2ee1b8449755125b33d5f1c327df1d7a89025840fd2da7d74d0d838e50681003",
           "kind": "paraphrase"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF p.1, title, Abstract and publication header; pp.2–3, Introduction and Section 3",
+          "passage": "The title, authors and DOI match candidate W4398763293. The PDF gives online availability as 24 May 2024. The authors describe a review and critical analysis of 126 CSLR studies organized by sign language, acquisition, modality, cues, techniques, datasets and performance. CSLR is defined as recognizing successive signs in unsegmented video, distinct from isolated recognition.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF pp.15–17, Sections 4.2.2–4.2.3; p.20, Table 8",
+          "passage": "Section 4.2.2 describes SubUNets (Camgoz et al., 2017), combining CNNs, BLSTMs and CTC with cropped-hand and full-frame images. Section 4.2.3 describes Cui et al. (2017), combining convolutional visual features, temporal convolutions and BLSTM. Table 8 labels both approaches as vision-based and compares their architectures and development/test WER on Phoenix2014. The two distinct CSLR studies satisfy the project-specific full-text comparison threshold.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF p.17, Sections 4.2.3–4.2.4; p.20, Table 8",
+          "passage": "The review covers visual RGB-based and multi-cue CSLR, including RGB CorrNet, a model combining pose/face/hands/full-frame features, and two-stream networks processing full frames and pose heatmaps. The presence of sensor-based studies elsewhere does not remove its qualifying vision-based coverage.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF pp.25–26, Sections 6.1–6.2",
+          "passage": "The authors organize research gaps into data-centric and model-centric issues. These include limited datasets and signing domains, naturalistic recording conditions, signer independence, non-manual cues, multimodal fusion and real-time efficiency. These are the review authors' assessments, not independently verified absences across the literature.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
         }
       ],
-      "unresolved_issues": [
-        "Full text unavailable from publisher response and inspected institutional page."
+      "unresolved_issues": [],
+      "next_action": "",
+      "classification": "dedicated",
+      "qualifying_studies": [
+        "Camgoz, Hadfield, Koller and Bowden (2017), SubUNets: End-to-end hand shape and continuous sign language recognition",
+        "Cui, Liu and Zhang (2017), Recurrent convolutional neural networks for continuous sign language recognition by staged optimization"
       ],
-      "next_action": "Obtain full text and identify the comparison of at least two prior CSLR studies.",
-      "classification": null,
-      "qualifying_studies": [],
-      "assessments": [],
+      "assessments": [
+        {
+          "stage": "title_abstract",
+          "ai_decision": "include",
+          "evidence_level": "abstract_only",
+          "source_ids": [
+            "screen2-alt-W4398763293"
+          ],
+          "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+          "evidence": [
+            {
+              "source_id": "screen2-alt-W4398763293",
+              "url": "https://pure.kfupm.edu.sa/en/publications/reviewing-25-years-of-continuous-sign-language-recognition-resear/",
+              "path": "work/sources/screen2-alt-W4398763293.txt",
+              "locator": "Institutional publication page, Abstract",
+              "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries.",
+              "sha256": "2ee1b8449755125b33d5f1c327df1d7a89025840fd2da7d74d0d838e50681003",
+              "kind": "paraphrase"
+            }
+          ],
+          "criteria": {
+            "M1": {
+              "status": "pass",
+              "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+            },
+            "M2": {
+              "status": "pass",
+              "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+            },
+            "M3": {
+              "status": "pass",
+              "reason": "Video modalities and visual cues are explicit."
+            }
+          }
+        }
+      ],
       "assessment_metadata": {
-        "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+        "assessed_utc": "2026-11-01T05:38:53.981757+00:00",
         "agent_batch": "batch2.json",
         "model": "GPT-6 / Codex (exact runtime version unavailable)",
         "protocol": "protocol.md",
-        "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+        "protocol_sha256": "67a6667ad709615e61e05c215daf066db84d38442bb1d3ba154576e10944613b",
         "prompt": "prompts/ai-screening-prompt.md",
         "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
         "execution_instructions": "prompts/screening-execution.md",
         "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
-        "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
-        "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+        "lead_review": "M1–M3 and project-specific full-text threshold assessed from supplied PDF; AI proposal only.",
+        "last_reassessment_utc": "2026-11-01T05:38:53.981757+00:00",
+        "current_method": "Single-agent full-text assessment of user-supplied PDF; Section 4.2 and Table 8 inspected; Table 8 p.20 visually checked. No subagents or network requests.",
+        "evidence_scope": "PDF pp.1–3, 15–21 and 24–26, with cited-study references on pp.27–28; eligibility assessment, not independent validation of benchmark results or gap claims."
       },
       "reassessment_history": [
         {
@@ -1010,6 +1245,74 @@
               "execution_instructions": "prompts/screening-execution.md",
               "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
               "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
+            }
+          }
+        },
+        {
+          "recorded_utc": "2026-11-01T05:38:53.981757+00:00",
+          "previous_assessment": {
+            "openalex_id": "W4398763293",
+            "human_decision": "not_screened",
+            "ai_decision": "include",
+            "stage": "title_abstract",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "screen2-alt-W4398763293"
+            ],
+            "description": "The abstract describes a 25-year CSLR review organizing 126 studies by modalities, methods, datasets and performance, including spatial, temporal and alignment approaches.",
+            "reason": "Advance to full-text assessment: the abstract supports review purpose and vision-based CSLR coverage. The publisher response did not expose the paper; the institutional repository provides an abstract only.",
+            "failed_criteria": [],
+            "criteria": {
+              "M1": {
+                "status": "pass",
+                "reason": "Institutional abstract explicitly describes review and critical analysis of126 studies."
+              },
+              "M2": {
+                "status": "pass",
+                "reason": "Abstract defines CSLR as successive signs in video without known boundaries."
+              },
+              "M3": {
+                "status": "pass",
+                "reason": "Video modalities and visual cues are explicit."
+              }
+            },
+            "evidence": [
+              {
+                "source_id": "screen2-alt-W4398763293",
+                "url": "https://pure.kfupm.edu.sa/en/publications/reviewing-25-years-of-continuous-sign-language-recognition-resear/",
+                "path": "work/sources/screen2-alt-W4398763293.txt",
+                "locator": "Institutional publication page, Abstract",
+                "passage": "A survey of126 studies across25 years organizes CSLR by input modalities, cues, techniques, datasets and performance; CSLR is defined as recognizing successive signs in a video stream without temporal boundaries.",
+                "sha256": "2ee1b8449755125b33d5f1c327df1d7a89025840fd2da7d74d0d838e50681003",
+                "kind": "paraphrase"
+              }
+            ],
+            "unresolved_issues": [
+              "Full text unavailable from publisher response and inspected institutional page."
+            ],
+            "next_action": "Obtain full text and identify the comparison of at least two prior CSLR studies.",
+            "classification": null,
+            "qualifying_studies": [],
+            "assessments": [],
+            "assessment_metadata": {
+              "assessed_utc": "2026-10-31T16:55:02.430388+00:00",
+              "agent_batch": "batch2.json",
+              "model": "GPT-6 / Codex (exact runtime version unavailable)",
+              "protocol": "protocol.md",
+              "protocol_sha256": "5c5a471761934857ed92929fbb182a1c2389012a17505e36958dade6105a7870",
+              "prompt": "prompts/ai-screening-prompt.md",
+              "prompt_sha256": "f84cebfaabec743235568c91912829616dc449053599d63c106f76e3173b2be8",
+              "execution_instructions": "prompts/screening-execution.md",
+              "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
+              "lead_review": "Evidence and criterion application checked before integration; AI proposal only.",
+              "last_reassessment_utc": "2026-10-31T17:07:01.802240+00:00"
+            },
+            "abstract_followup": {
+              "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
+              "method": "Single-agent abstract-first reassessment; no subagents or discovery searches",
+              "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
+              "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
+              "full_text_download_retried": false
             }
           }
         }
@@ -3288,6 +3591,30 @@
       "new_discovery_searches": 0,
       "openalex_credits_used": 0
     },
-    "selection_revision": "work/archive/2026-11-01-selection-revision.json"
+    "selection_revision": "work/archive/2026-11-01-selection-revision.json",
+    "full_text_followups": [
+      {
+        "assessed_utc": "2026-11-01T05:31:49.621108+00:00",
+        "openalex_id": "W3046952127",
+        "source_id": "manual-W3046952127",
+        "previous_stage": "title_abstract",
+        "stage": "full_text",
+        "ai_decision": "include",
+        "subagents": 0,
+        "new_discovery_searches": 0,
+        "openalex_credits_used": 0
+      },
+      {
+        "assessed_utc": "2026-11-01T05:38:53.981757+00:00",
+        "openalex_id": "W4398763293",
+        "source_id": "manual-W4398763293",
+        "previous_stage": "title_abstract",
+        "stage": "full_text",
+        "ai_decision": "include",
+        "subagents": 0,
+        "new_discovery_searches": 0,
+        "openalex_credits_used": 0
+      }
+    ]
   }
 }

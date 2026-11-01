@@ -190,30 +190,113 @@
     {
       "openalex_id": "W4398763293",
       "doi": "10.1016/j.ipm.2024.103774",
-      "authors": "Alyami, Luqman and Hammoudeh",
+      "authors": "Sarah Alyami; Hamzah Luqman; Mohammad Hammoudeh",
       "year": 2024,
       "url": "https://www.sciencedirect.com/science/article/pii/S0306457324001341",
-      "evidence_level": "abstract_only",
+      "evidence_level": "full_text",
       "source_ids": [
         "alyami2024-publisher",
-        "alyami2024-preview-web"
+        "alyami2024-preview-web",
+        "manual-W4398763293"
       ],
-      "coverage_summary": "Publisher abstract: 126 studies across seven dimensions, including acquisition, cues, methods, datasets and performance; spatial/temporal/alignment taxonomy and non-manual challenges. Full-text omissions remain unchecked.",
+      "coverage_summary": "A dedicated CSLR review organizing 126 studies by methods, modalities, datasets and performance, with discussion of data and model challenges.",
       "access": {
-        "status": "unavailable",
-        "detail": "Publisher preview inspected through web tool; direct archive request 403; no verified public full text located."
+        "status": "available_local",
+        "detail": "User-supplied local PDF archived with SHA-256; original download URL and date were not supplied. Previous access failures remain in history."
       },
       "claims": [
         {
           "kind": "author_stated",
           "locator": "Publisher abstract and section snippets inspected via web tool",
           "paraphrase": "Presents a longitudinal CSLR taxonomy and data/model challenges."
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF p.1, title, Abstract and publication header; pp.2–3, Introduction and Section 3",
+          "passage": "The title, authors and DOI match candidate W4398763293. The PDF gives online availability as 24 May 2024. The authors describe a review and critical analysis of 126 CSLR studies organized by sign language, acquisition, modality, cues, techniques, datasets and performance. CSLR is defined as recognizing successive signs in unsegmented video, distinct from isolated recognition.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF pp.15–17, Sections 4.2.2–4.2.3; p.20, Table 8",
+          "passage": "Section 4.2.2 describes SubUNets (Camgoz et al., 2017), combining CNNs, BLSTMs and CTC with cropped-hand and full-frame images. Section 4.2.3 describes Cui et al. (2017), combining convolutional visual features, temporal convolutions and BLSTM. Table 8 labels both approaches as vision-based and compares their architectures and development/test WER on Phoenix2014. The two distinct CSLR studies satisfy the project-specific full-text comparison threshold.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF p.17, Sections 4.2.3–4.2.4; p.20, Table 8",
+          "passage": "The review covers visual RGB-based and multi-cue CSLR, including RGB CorrNet, a model combining pose/face/hands/full-frame features, and two-stream networks processing full frames and pose heatmaps. The presence of sensor-based studies elsewhere does not remove its qualifying vision-based coverage.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
+        },
+        {
+          "source_id": "manual-W4398763293",
+          "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+          "path": "work/sources/manual-W4398763293.txt",
+          "locator": "PDF pp.25–26, Sections 6.1–6.2",
+          "passage": "The authors organize research gaps into data-centric and model-centric issues. These include limited datasets and signing domains, naturalistic recording conditions, signer independence, non-manual cues, multimodal fusion and real-time efficiency. These are the review authors' assessments, not independently verified absences across the literature.",
+          "sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W4398763293.pdf",
+          "source_manifest": "work/sources/manual-W4398763293.json"
         }
       ],
       "coverage_status": {
-        "full_text": "unavailable",
+        "full_text": "assessed",
+        "classification": "dedicated",
         "omissions": "not_checked"
-      }
+      },
+      "assessment_history": [
+        {
+          "recorded_utc": "2026-11-01T05:38:53.981757+00:00",
+          "previous_assessment": {
+            "openalex_id": "W4398763293",
+            "doi": "10.1016/j.ipm.2024.103774",
+            "authors": "Alyami, Luqman and Hammoudeh",
+            "year": 2024,
+            "url": "https://www.sciencedirect.com/science/article/pii/S0306457324001341",
+            "evidence_level": "abstract_only",
+            "source_ids": [
+              "alyami2024-publisher",
+              "alyami2024-preview-web"
+            ],
+            "coverage_summary": "Publisher abstract: 126 studies across seven dimensions, including acquisition, cues, methods, datasets and performance; spatial/temporal/alignment taxonomy and non-manual challenges. Full-text omissions remain unchecked.",
+            "access": {
+              "status": "unavailable",
+              "detail": "Publisher preview inspected through web tool; direct archive request 403; no verified public full text located."
+            },
+            "claims": [
+              {
+                "kind": "author_stated",
+                "locator": "Publisher abstract and section snippets inspected via web tool",
+                "paraphrase": "Presents a longitudinal CSLR taxonomy and data/model challenges."
+              }
+            ],
+            "coverage_status": {
+              "full_text": "unavailable",
+              "omissions": "not_checked"
+            }
+          }
+        }
+      ],
+      "publication_date_verified": "2024-05-24 (online)",
+      "methods": "Section 4.2 reviews CNN-HMM, CNN-RNN, temporal convolutions, 3DCNN, fully convolutional networks, GCN, Transformers and vision Transformers.",
+      "datasets_evaluation": "Table 8 compares architectures and author-reported development/test WER across CSLR benchmarks, including Phoenix2014, Phoenix2014T and SIGNUM. Results were not independently reproduced.",
+      "limitations": "Sections 6.1–6.2 identify data scarcity, limited domains, naturalistic signing, signer independence, non-manual features, multimodal fusion and real-time efficiency as research challenges."
     },
     {
       "openalex_id": "W4408581155",
@@ -241,6 +324,70 @@
         "full_text": "unavailable",
         "omissions": "not_checked"
       }
+    },
+    {
+      "openalex_id": "W3046952127",
+      "doi": "10.1016/j.eswa.2020.113794",
+      "authors": "Razieh Rastgoo; Kourosh Kiani; Sergio Escalera",
+      "year": 2020,
+      "publication_date_verified": "2020-08-06 (online); volume 164 dated 2021",
+      "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+      "evidence_level": "full_text",
+      "source_ids": [
+        "manual-W3046952127"
+      ],
+      "coverage_summary": "A broad survey of visual deep-learning approaches to isolated and continuous sign recognition, covering input modalities, datasets, methods and open challenges.",
+      "methods": "Section 7: convolutional models, LSTMs, CTC and iterative optimization; Section 8.1: hybrid CNN-HMM.",
+      "datasets_evaluation": "Table 8 compares reported metrics and datasets for CSLR studies, including PHOENIX-Weather 2014 and SIGNUM; figures are author-reported, not independently re-evaluated.",
+      "limitations": "Section 7.5 discusses temporal alignment and visual feature extraction; it proposes attention, multimodal inputs, structured spatiotemporal models and prior knowledge as future directions.",
+      "access": "User-supplied local PDF archived with SHA-256; original download URL and download date were not supplied.",
+      "claims": [
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.1, Abstract; p.3, Introduction and Section 2",
+          "passage": "The authors explicitly review vision-based deep-learning approaches and propose a taxonomy covering isolated and continuous sign recognition, datasets, applications and research challenges.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF pp.18–19, Section 7, especially Sections 7.1 and 7.3; p.20, Table 8; pp.26–27, references",
+          "passage": "Section 7 discusses prior continuous-recognition methods. Section 7.1 describes Pu et al. (2018), combining 3D-ResNet, dilated CNN and CTC on RGB video; Section 7.3 describes Cui et al. (2019), combining CNN/Bi-LSTM, iterative training, RGB and optical flow. Table 8 compares their modalities, models, datasets and reported error rates, including PHOENIX-Weather 2014 and SIGNUM. These are two distinct prior CSLR studies.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.19, Section 7.5; p.20, Table 8",
+          "passage": "The discussion distinguishes isolated recognition from sequence recognition and temporal alignment. It identifies feature extraction and alignment as central issues and proposes attention, multiple modalities, structured spatiotemporal models and sign-language prior knowledge as future directions. Table 8 includes visual RGB-video methods.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        },
+        {
+          "source_id": "manual-W3046952127",
+          "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+          "path": "work/sources/manual-W3046952127.txt",
+          "locator": "PDF p.1, publication header and DOI",
+          "passage": "The title, authors and DOI match candidate W3046952127. The PDF gives online availability as 6 August 2020 and the journal volume as Expert Systems With Applications 164 (2021), article 113794. Both dates satisfy the project publication window; the saved candidate year 2020 is retained.",
+          "sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+          "kind": "paraphrase",
+          "pdf_path": "work/sources/manual-W3046952127.pdf",
+          "source_manifest": "work/sources/manual-W3046952127.json"
+        }
+      ],
+      "coverage_status": "Broader review with qualifying CSLR coverage; proposed eligible after full-text assessment."
     }
   ],
   "gap_hypotheses": []

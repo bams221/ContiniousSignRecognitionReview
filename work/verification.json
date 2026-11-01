@@ -4,12 +4,12 @@
   "candidate_count": 33,
   "ai_by_stage": {
     "full_text": {
-      "include": 13,
+      "include": 15,
       "uncertain": 3,
       "exclude": 2
     },
     "title_abstract": {
-      "include": 11,
+      "include": 9,
       "uncertain": 1,
       "exclude": 3
     }

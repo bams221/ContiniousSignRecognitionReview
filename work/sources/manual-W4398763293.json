@@ -1,0 +1,17 @@
+{
+  "source_id": "manual-W4398763293",
+  "openalex_id": "W4398763293",
+  "doi": "10.1016/j.ipm.2024.103774",
+  "url": "https://doi.org/10.1016/j.ipm.2024.103774",
+  "url_role": "Publication identifier; original download URL was not supplied",
+  "acquisition": "User-supplied local PDF",
+  "original_path": "manually_downloaded_papers/reviewing 25 years of cslr research.pdf",
+  "downloaded_utc": null,
+  "imported_utc": "2026-11-01T05:38:10.659646+00:00",
+  "body": "manual-W4398763293.pdf",
+  "sha256": "a9f14071e60f631cb40b85d690e32911b68076acbf039e65b1d7deae3c2bfab7",
+  "text": "manual-W4398763293.txt",
+  "text_sha256": "9ef0eb24178bc8387e60337db4595ddd02ae330e16b575bcbfca78f80bbaf951",
+  "pages": 32,
+  "extractor": "pypdf 6.21.2"
+}

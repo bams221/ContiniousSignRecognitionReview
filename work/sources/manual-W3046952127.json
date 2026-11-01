@@ -1,0 +1,17 @@
+{
+  "source_id": "manual-W3046952127",
+  "openalex_id": "W3046952127",
+  "doi": "10.1016/j.eswa.2020.113794",
+  "url": "https://doi.org/10.1016/j.eswa.2020.113794",
+  "url_role": "Publication identifier; original download URL was not supplied",
+  "acquisition": "User-supplied local PDF",
+  "original_path": "manually_downloaded_papers/slr a deep survey.pdf",
+  "downloaded_utc": null,
+  "imported_utc": "2026-11-01T05:31:19.750450+00:00",
+  "body": "manual-W3046952127.pdf",
+  "sha256": "e29c9dbd6290fd01e250a77d45d1fdef49cee6ef458f114e9df4a7279ab63f23",
+  "text": "manual-W3046952127.txt",
+  "text_sha256": "0cc6032b9eda53c127336ed7e32e06185ed88130c6c02b747bdf2a41e2940dc3",
+  "pages": 27,
+  "extractor": "pypdf 6.21.2"
+}

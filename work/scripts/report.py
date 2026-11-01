@@ -70,7 +70,7 @@ def main():
     save(WORK / 'corpus.json', list(corpus.values())); save(WORK / 'summary.json', counts)
     fields=['openalex_id','title','ai_decision','human_decision','stage','evidence_level','reason','source_ids']
     with (WORK / 'screening.csv').open('w',newline='') as handle:
-        writer=csv.DictWriter(handle, fieldnames=fields);writer.writeheader()
+        writer=csv.DictWriter(handle, fieldnames=fields, lineterminator='\n');writer.writeheader()
         for wid, row in rows.items():
             writer.writerow({**{f:row.get(f,'not_checked') for f in fields},'title':corpus[wid]['work']['display_name'],
                              'source_ids':'|'.join(row['source_ids'])})

@@ -24,6 +24,14 @@ Saved raw search runs are immutable. Screening uses saved abstracts and availabl
 
 Use a selected source ID to avoid retrying unrelated failed requests. Update `work/analysis_config.json` with the report generation time for a new reporting edition; generation itself is deterministic and offline.
 
+For a manually downloaded PDF, archive the original bytes, page-labelled text and provenance before screening:
+
+```sh
+.venv/bin/python work/scripts/import_local_pdf.py "manually_downloaded_papers/slr a deep survey.pdf" --source-id manual-W3046952127 --openalex-id W3046952127 --doi 10.1016/j.eswa.2020.113794
+```
+
+This import requires `pypdf` and refuses to overwrite existing source archives. Once imported, reuse the saved files. A user-supplied PDF does not count as a manual screening decision.
+
 Serve the report locally by opening the HTML file, or package it with nginx:
 
 ```sh
