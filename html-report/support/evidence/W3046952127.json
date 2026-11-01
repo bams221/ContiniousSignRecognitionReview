@@ -6,7 +6,6 @@
     "openalex_url": "https://openalex.org/W3046952127"
   },
   "openalex_id": "W3046952127",
-  "human_decision": "not_screened",
   "ai_decision": "include",
   "stage": "full_text",
   "evidence_level": "full_text",
@@ -283,5 +282,6 @@
     "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
     "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
     "full_text_download_retried": false
-  }
+  },
+  "human_decision": "not_screened"
 }

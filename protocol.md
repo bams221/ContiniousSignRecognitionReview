@@ -24,6 +24,8 @@ OpenAlex-only discovery; historical executable settings are in `work/queries.jso
 
 ## Screening and evidence
 
+Current human verdicts are entered in `work/manual_decisions.csv`, one row per stable OpenAlex ID. Regeneration combines them with AI records from `work/screening.json`; editing a manual verdict does not change AI assessments. Saved assessment histories retain their original values.
+
 Deduplicate OpenAlex IDs and normalized DOIs, retaining query/run/page provenance. Flag conflicting metadata and possible version pairs for explicit merge decisions. First screen titles/abstracts, then inspect plausible reviews' full texts. AI suggestions are inputs in `work/screening.json`, never final human decisions; record model, prompt, and available evidence. All final human decisions initially remain `not_screened`.
 
 Extract method families, temporal alignment, representations, datasets/sign languages, metrics/splits, generalization, reproducibility, and challenges into `work/evidence.json`. Each content assertion needs an OpenAlex ID or DOI, source URL, evidence level (`metadata_only`, `abstract_only`, `full_text`), locator and supporting passage or faithful paraphrase. Separate author statements from analyst interpretations. Use `not_reported` only after checking the relevant full text, `not_screened` when not assessed, and `unavailable` when the source cannot be obtained. An unmentioned topic is a potential review gap, not proof of an absence in the literature.

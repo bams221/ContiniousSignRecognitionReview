@@ -3,7 +3,6 @@
   "records": [
     {
       "openalex_id": "W3024060113",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -130,7 +129,6 @@
     },
     {
       "openalex_id": "W6997309381",
-      "human_decision": "not_screened",
       "ai_decision": "uncertain",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -258,7 +256,6 @@
     },
     {
       "openalex_id": "W3046952127",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -539,7 +536,6 @@
     },
     {
       "openalex_id": "W3165431157",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -607,7 +603,6 @@
     },
     {
       "openalex_id": "W4285792148",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -736,7 +731,6 @@
     },
     {
       "openalex_id": "W4313412839",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -863,7 +857,6 @@
     },
     {
       "openalex_id": "W4387844301",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -992,7 +985,6 @@
     },
     {
       "openalex_id": "W4390107804",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -1049,7 +1041,6 @@
     },
     {
       "openalex_id": "W4398763293",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -1327,7 +1318,6 @@
     },
     {
       "openalex_id": "W6949155979",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -1384,7 +1374,6 @@
     },
     {
       "openalex_id": "W4404247797",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -1459,7 +1448,6 @@
     },
     {
       "openalex_id": "W6981314463",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -1534,7 +1522,6 @@
     },
     {
       "openalex_id": "W4409426808",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -1663,7 +1650,6 @@
     },
     {
       "openalex_id": "W4408859567",
-      "human_decision": "include",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -1743,7 +1729,6 @@
     },
     {
       "openalex_id": "W4415763805",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -1811,7 +1796,6 @@
     },
     {
       "openalex_id": "W4408581155",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -1938,7 +1922,6 @@
     },
     {
       "openalex_id": "W7124904654",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2267,7 +2250,6 @@
     },
     {
       "openalex_id": "W4417473484",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2332,7 +2314,6 @@
     },
     {
       "openalex_id": "W7116134615",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2409,7 +2390,6 @@
     },
     {
       "openalex_id": "W7162827361",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2476,7 +2456,6 @@
     },
     {
       "openalex_id": "W7170206172",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -2534,7 +2513,6 @@
     },
     {
       "openalex_id": "W7166669486",
-      "human_decision": "not_screened",
       "ai_decision": "uncertain",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2692,7 +2670,6 @@
     },
     {
       "openalex_id": "W7172124593",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -2819,7 +2796,6 @@
     },
     {
       "openalex_id": "W7223099906",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2894,7 +2870,6 @@
     },
     {
       "openalex_id": "W3024462586",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -2961,7 +2936,6 @@
     },
     {
       "openalex_id": "W3080888993",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3026,7 +3000,6 @@
     },
     {
       "openalex_id": "W4378468504",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3094,7 +3067,6 @@
     },
     {
       "openalex_id": "W7121016685",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3159,7 +3131,6 @@
     },
     {
       "openalex_id": "W4414769190",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -3286,7 +3257,6 @@
     },
     {
       "openalex_id": "W4416744680",
-      "human_decision": "not_screened",
       "ai_decision": "exclude",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3360,7 +3330,6 @@
     },
     {
       "openalex_id": "W7155605949",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3435,7 +3404,6 @@
     },
     {
       "openalex_id": "W7221015162",
-      "human_decision": "not_screened",
       "ai_decision": "include",
       "stage": "title_abstract",
       "evidence_level": "abstract_only",
@@ -3562,7 +3530,6 @@
     },
     {
       "openalex_id": "W7105609630",
-      "human_decision": "not_screened",
       "ai_decision": "uncertain",
       "stage": "full_text",
       "evidence_level": "full_text",
@@ -3724,7 +3691,7 @@
     "new_discovery_searches": 0,
     "openalex_credits_used": 0,
     "method": "Three disjoint agent batches; lead evidence review; title/abstract followed by available full text.",
-    "manual_decisions": "Preserved independently as not_screened",
+    "manual_decisions": "Read independently from work/manual_decisions.csv during report generation.",
     "abstract_followup": {
       "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
       "reviewed_ids": [

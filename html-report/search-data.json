@@ -7,7 +7,7 @@
     "verification_runs": [],
     "pilot_run": "20261025T080219770846Z-pilot",
     "date": "2026-10-25",
-    "report_generated_utc": "2026-11-01T07:59:28.447460+00:00",
+    "report_generated_utc": "2026-11-01T09:32:33.596223+00:00",
     "selected_queries": {
       "20261025T080315329549Z-full": [
         "q11",
@@ -22,7 +22,8 @@
       ]
     },
     "expected_candidate_count": 33,
-    "selection_revision": "work/archive/2026-11-01-selection-revision.json"
+    "selection_revision": "work/archive/2026-11-01-selection-revision.json",
+    "manual_decisions_sha256": "3798df32fae4b621df2963d88f0a05a2823881908f09027e2e07fa4adc49c071"
   },
   "summary": {
     "discovery_occurrences": 84,
@@ -34,8 +35,8 @@
       "exclude": 6
     },
     "human_decisions": {
-      "not_screened": 32,
-      "include": 1
+      "not_screened": 31,
+      "include": 2
     },
     "by_stage": {
       "title_abstract": 13,
@@ -250,7 +251,6 @@
     "records": [
       {
         "openalex_id": "W3024060113",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -373,11 +373,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W6997309381",
-        "human_decision": "not_screened",
         "ai_decision": "uncertain",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -501,11 +501,11 @@
           "outcome": "Verdict retained",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W3046952127",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -782,11 +782,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W3165431157",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -850,11 +850,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4285792148",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -979,11 +979,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4313412839",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -1106,11 +1106,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4387844301",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -1235,11 +1235,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4390107804",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -1292,11 +1292,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4398763293",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -1570,11 +1570,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "include"
       },
       {
         "openalex_id": "W6949155979",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -1627,11 +1627,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4404247797",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -1702,11 +1702,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W6981314463",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -1777,11 +1777,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4409426808",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -1906,11 +1906,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4408859567",
-        "human_decision": "include",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -1986,11 +1986,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "include"
       },
       {
         "openalex_id": "W4415763805",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2054,11 +2054,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4408581155",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -2181,11 +2181,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7124904654",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2510,11 +2510,11 @@
         "reporting_issues": [
           "The Results paragraph claims three continuous studies without naming them; the abstract and Table 5 explicitly identify a single-study continuous synthesis. This reporting inconsistency remains; exclusion is based on identifiable study coverage under M2."
         ],
-        "resolution_note": "The supplied full PDF resolves the archival limitation. Primary-source inspection resolves the previously ambiguous Buttar entry as dynamic-sign clip classification under this project's CSLR definition; Bencherif's mixed results concern static and dynamic classes. The two-study comparison requirement is not met."
+        "resolution_note": "The supplied full PDF resolves the archival limitation. Primary-source inspection resolves the previously ambiguous Buttar entry as dynamic-sign clip classification under this project's CSLR definition; Bencherif's mixed results concern static and dynamic classes. The two-study comparison requirement is not met.",
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4417473484",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2575,11 +2575,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7116134615",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2652,11 +2652,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7162827361",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2719,11 +2719,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7170206172",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -2777,11 +2777,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7166669486",
-        "human_decision": "not_screened",
         "ai_decision": "uncertain",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -2935,11 +2935,11 @@
           "outcome": "Verdict retained",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7172124593",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -3062,11 +3062,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7223099906",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3137,11 +3137,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W3024462586",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3204,11 +3204,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W3080888993",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3269,11 +3269,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4378468504",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3337,11 +3337,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7121016685",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3402,11 +3402,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4414769190",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -3529,11 +3529,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W4416744680",
-        "human_decision": "not_screened",
         "ai_decision": "exclude",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3603,11 +3603,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7155605949",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3678,11 +3678,11 @@
           "execution_instructions": "prompts/screening-execution.md",
           "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
           "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7221015162",
-        "human_decision": "not_screened",
         "ai_decision": "include",
         "stage": "title_abstract",
         "evidence_level": "abstract_only",
@@ -3805,11 +3805,11 @@
           "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       },
       {
         "openalex_id": "W7105609630",
-        "human_decision": "not_screened",
         "ai_decision": "uncertain",
         "stage": "full_text",
         "evidence_level": "full_text",
@@ -3963,7 +3963,8 @@
           "outcome": "Verdict retained",
           "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
           "full_text_download_retried": false
-        }
+        },
+        "human_decision": "not_screened"
       }
     ],
     "assessment_run": {
@@ -3971,7 +3972,7 @@
       "new_discovery_searches": 0,
       "openalex_credits_used": 0,
       "method": "Three disjoint agent batches; lead evidence review; title/abstract followed by available full text.",
-      "manual_decisions": "Preserved independently as not_screened",
+      "manual_decisions": "Read independently from work/manual_decisions.csv during report generation.",
       "abstract_followup": {
         "assessed_utc": "2026-10-31T17:07:01.802240+00:00",
         "reviewed_ids": [

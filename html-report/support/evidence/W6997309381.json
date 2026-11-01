@@ -6,7 +6,6 @@
     "openalex_url": "https://openalex.org/W6997309381"
   },
   "openalex_id": "W6997309381",
-  "human_decision": "not_screened",
   "ai_decision": "uncertain",
   "stage": "title_abstract",
   "evidence_level": "abstract_only",
@@ -130,5 +129,6 @@
     "outcome": "Verdict retained",
     "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
     "full_text_download_retried": false
-  }
+  },
+  "human_decision": "not_screened"
 }

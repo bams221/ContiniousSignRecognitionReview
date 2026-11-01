@@ -6,7 +6,6 @@
     "openalex_url": "https://openalex.org/W7124904654"
   },
   "openalex_id": "W7124904654",
-  "human_decision": "not_screened",
   "ai_decision": "exclude",
   "stage": "full_text",
   "evidence_level": "full_text",
@@ -331,5 +330,6 @@
   "reporting_issues": [
     "The Results paragraph claims three continuous studies without naming them; the abstract and Table 5 explicitly identify a single-study continuous synthesis. This reporting inconsistency remains; exclusion is based on identifiable study coverage under M2."
   ],
-  "resolution_note": "The supplied full PDF resolves the archival limitation. Primary-source inspection resolves the previously ambiguous Buttar entry as dynamic-sign clip classification under this project's CSLR definition; Bencherif's mixed results concern static and dynamic classes. The two-study comparison requirement is not met."
+  "resolution_note": "The supplied full PDF resolves the archival limitation. Primary-source inspection resolves the previously ambiguous Buttar entry as dynamic-sign clip classification under this project's CSLR definition; Bencherif's mixed results concern static and dynamic classes. The two-study comparison requirement is not met.",
+  "human_decision": "not_screened"
 }

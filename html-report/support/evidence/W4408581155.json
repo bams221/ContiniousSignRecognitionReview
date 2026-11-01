@@ -6,7 +6,6 @@
     "openalex_url": "https://openalex.org/W4408581155"
   },
   "openalex_id": "W4408581155",
-  "human_decision": "not_screened",
   "ai_decision": "include",
   "stage": "title_abstract",
   "evidence_level": "abstract_only",
@@ -129,5 +128,6 @@
     "outcome": "Abstract supports retention for full-text assessment; eligibility threshold not yet tested",
     "evidence_scope": "Saved candidate abstract; targeted cited-study abstracts/locators for existing full-text uncertainty",
     "full_text_download_retried": false
-  }
+  },
+  "human_decision": "not_screened"
 }

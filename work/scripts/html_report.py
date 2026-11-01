@@ -15,6 +15,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 from screening_report import verdict_label
 from analysis_selection import selected_queries
+from manual_decisions import load_screening
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -44,7 +45,7 @@ def table(headers, rows, caption):
 def main(check=False):
     analysis = read(WORK / 'analysis_config.json')
     summary = read(WORK / 'summary.json')
-    screening = read(WORK / 'screening.json')
+    screening = load_screening(WORK)
     records = screening['records']
     corpus = {x['work']['id'].rsplit('/', 1)[-1]: x for x in read(WORK / 'corpus.json')}
     evidence = {x['openalex_id']: x for x in read(WORK / 'evidence.json')['reviews']

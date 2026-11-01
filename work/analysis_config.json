@@ -6,7 +6,7 @@
   "verification_runs": [],
   "pilot_run": "20261025T080219770846Z-pilot",
   "date": "2026-10-25",
-  "report_generated_utc": "2026-11-01T07:59:28.447460+00:00",
+  "report_generated_utc": "2026-11-01T09:32:33.596223+00:00",
   "selected_queries": {
     "20261025T080315329549Z-full": [
       "q11",
@@ -21,5 +21,6 @@
     ]
   },
   "expected_candidate_count": 33,
-  "selection_revision": "work/archive/2026-11-01-selection-revision.json"
+  "selection_revision": "work/archive/2026-11-01-selection-revision.json",
+  "manual_decisions_sha256": "3798df32fae4b621df2963d88f0a05a2823881908f09027e2e07fa4adc49c071"
 }

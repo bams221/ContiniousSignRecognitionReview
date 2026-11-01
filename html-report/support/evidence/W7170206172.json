@@ -6,7 +6,6 @@
     "openalex_url": "https://openalex.org/W7170206172"
   },
   "openalex_id": "W7170206172",
-  "human_decision": "not_screened",
   "ai_decision": "exclude",
   "stage": "title_abstract",
   "evidence_level": "abstract_only",
@@ -60,5 +59,6 @@
     "execution_instructions": "prompts/screening-execution.md",
     "execution_sha256": "139127892e2ddda707617d624dd857fd45bea9f80ab00152887a9efb59137ec2",
     "lead_review": "Evidence and criterion application checked before integration; AI proposal only."
-  }
+  },
+  "human_decision": "not_screened"
 }

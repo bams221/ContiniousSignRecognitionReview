@@ -12,23 +12,27 @@ Rebuild and verify offline with Python 3.10 or newer (standard library):
 python3 work/scripts/report.py
 python3 work/scripts/verify.py
 python3 work/scripts/test_screening_report.py
+python3 work/scripts/test_manual_decisions.py
 ```
 
-`work/screening.json` is the source of current proposals and assessment histories. Paper descriptions, verdict explanations, and evidence files under `html-report/support/` are generated from those records. Each Markdown report contains only a short description and verdict explanation, capped at 150 words including the heading. Source URLs, passages, locators, access limitations, and assessment provenance remain in structured data.
+`work/screening.json` is the source of AI proposals and assessment histories; `work/manual_decisions.csv` stores current manual verdicts. Report generation combines them in the HTML, data snapshot and screening CSV. Paper descriptions, verdict explanations, and evidence files under `html-report/support/` are generated from those records. Each Markdown report contains only a short description and verdict explanation, capped at 150 words including the heading. Source URLs, passages, locators, access limitations, and assessment provenance remain in structured data.
 
 ## Recording a manual screening decision
 
-1. Review the paper against [M1–M3 and the screening-stage rules](protocol.md#current-eligibility-amendment). Find its stable OpenAlex ID (`W…`) in the report, then locate that `openalex_id` in `work/screening.json`.
-2. Set that record's `human_decision` to `"include"` or `"exclude"`. Leave the AI decision, evidence and stage unchanged.
-3. Add or update `manual_assessment` in the same record. Set `decision` to the same verdict.
-4. Update `report_generated_utc` in `work/analysis_config.json`, then run:
+1. Open [work/manual_decisions.csv](work/manual_decisions.csv) and find the paper by title or OpenAlex ID.
+2. Change only its `decision` value to `include` or `exclude`. Use `uncertain` for an unresolved decision, or `not_screened` to reset it. For example, this line marks the paper as included:
+
+   ```csv
+   W4408859567,include,Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review
+   ```
+
+3. Regenerate the report:
 
    ```sh
    python3 work/scripts/report.py
    ```
 
-5. Open `html-report/index.html` and check the paper's **Manual screening decision** column. Edit the JSON source, not the generated HTML or CSV.
-
+Refresh `html-report/index.html` to see the updated **Manual screening decision**. This CSV is the source of manual verdicts; leave IDs, titles and existing CSV quotes unchanged. AI decisions remain separate. Regeneration updates the report date automatically when this file changes, so no other file needs editing. To check the result, run `python3 work/scripts/verify.py`.
 
 Saved raw search runs are immutable. Screening uses saved abstracts and available full texts; targeted source acquisition adds no discovery candidates. New source responses and retrieval metadata are archived under `work/sources/`. Optional PDF extraction uses `pypdf` in the project virtual environment:
 

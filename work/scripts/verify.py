@@ -14,6 +14,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from retrieve import export
 from analysis_selection import selected_queries
+from manual_decisions import load_screening
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -27,9 +28,10 @@ class Links(HTMLParser):
 
 def verify_screening():
     from screening_report import build_reports
-    records=json.loads((ROOT/'work/screening.json').read_text())['records']
+    records=load_screening(ROOT/'work')['records']
     corpus={i['work']['id'].split('/')[-1]:i for i in json.loads((ROOT/'work/corpus.json').read_text())}
     analysis=json.loads((ROOT/'work/analysis_config.json').read_text())
+    assert analysis['manual_decisions_sha256'] == hashlib.sha256((ROOT/'work/manual_decisions.csv').read_bytes()).hexdigest(), 'Manual verdicts changed; run report.py'
     expected=analysis['expected_candidate_count']
     assert len(records)==len(corpus)==expected
     assert len({r['openalex_id'] for r in records})==expected
@@ -37,6 +39,7 @@ def verify_screening():
     build_reports(records, corpus, check=True)
     summary=json.loads((ROOT/'work/summary.json').read_text())
     assert summary['ai_decisions']==dict(Counter(r['ai_decision'] for r in records))
+    assert summary['human_decisions']==dict(Counter(r['human_decision'] for r in records))
     for stage, decisions in summary['ai_by_stage'].items():
         assert decisions==dict(Counter(r['ai_decision'] for r in records if r['stage']==stage))
     rows=list(csv.DictReader((ROOT/'work/screening.csv').open()))

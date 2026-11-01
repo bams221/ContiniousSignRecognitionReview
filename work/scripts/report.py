@@ -2,14 +2,17 @@
 """Rebuild merged corpus, screening exports, counts, and comparison from saved inputs.
 
 Usage: python3 work/scripts/report.py
-No network. Manual inputs: analysis_config.json, screening.json, evidence.json.
+No network. Inputs: analysis_config.json, screening.json, manual_decisions.csv, evidence.json.
 """
 import csv
 from collections import Counter
+from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 from screening_report import build_reports
 from analysis_selection import selected_queries
+from manual_decisions import load_screening
 
 ROOT = Path(__file__).resolve().parents[2]
 WORK = ROOT / 'work'
@@ -48,9 +51,14 @@ def main():
         if item['normalized_doi']: dois.setdefault(item['normalized_doi'], []).append(wid)
     conflicts = {doi:ids for doi,ids in dois.items() if len(ids)>1}
     if conflicts: raise ValueError('Cross-run DOI conflicts require a merge decision: ' + str(conflicts))
-    screening = read(WORK / 'screening.json')
+    screening = load_screening(WORK)
     rows = {row['openalex_id']:row for row in screening['records']}
     if set(rows) != set(corpus): raise ValueError('Screening records do not match saved corpus')
+    manual_hash = hashlib.sha256((WORK / 'manual_decisions.csv').read_bytes()).hexdigest()
+    if config.get('manual_decisions_sha256') != manual_hash:
+        config['manual_decisions_sha256'] = manual_hash
+        config['report_generated_utc'] = datetime.now(timezone.utc).isoformat()
+        save(WORK / 'analysis_config.json', config)
     evidence = read(WORK / 'evidence.json')
     build_reports(screening['records'], corpus)
     reserved = sum(read(p).get('credits_reserved',0) for p in (WORK / 'runs').glob('*/manifest.json'))
