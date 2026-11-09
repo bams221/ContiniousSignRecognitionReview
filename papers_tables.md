@@ -11,12 +11,12 @@
 
 ## Таблица 2. Матрица тематического покрытия
 
-| ID  | Data acquisition methods | CSLR challenges | Manual and non-manual cues | Visual feature models | Temporal models | Alignment models | Learning strategies and knowledge transfer | Data augmentation | Language models | Generative models |
-| --- | ------------------------ | --------------- | -------------------------- | --------------------- | --------------- | ---------------- | ------------------------------------------ | ----------------- | --------------- | ----------------- |
-| 3   | ?                        | +               | -                          | +                     | +               | +                | ?                                          | -                 | ?               | -                 |
-| 9   | +                        | +               | +                          | +                     | +               | +                | +                                          | +                 | +               | +                 |
-| 13  | +                        | +               | +                          | +                     | +               | +                | ?                                          | −                 | −               | −                 |
-|     |                          |                 |                            |                       |                 |                  |                                            |                   |                 |                   |
+| ID  | Data acquisition methods | CSLR challenges | Manual and non-manual cues | Visual feature models | Temporal approaches | Alignment approaches | Learning strategies and knowledge transfer | Data augmentation | Language models | Generative models |
+| --- | ------------------------ | --------------- | -------------------------- | --------------------- | ------------------- | -------------------- | ------------------------------------------ | ----------------- | --------------- | ----------------- |
+| 3   | ?                        | +               | -                          | +                     | +                   | +                    | ?                                          | -                 | ?               | -                 |
+| 9   | +                        | +               | +                          | +                     | +                   | +                    | +                                          | +                 | +               | +                 |
+| 13  | +                        | +               | +                          | +                     | +                   | +                    | ?                                          | −                 | −               | −                 |
+|     |                          |                 |                            |                       |                     |                      |                                            |                   |                 |                   |
 
 ## Описание полей матрицы
 
@@ -26,8 +26,8 @@
 | CSLR challenges                            | Identified current CSLR challenges                                                                                                      |
 | Manual and non-manual cues                 | Discussed hands, body, face, mouth, and their contributions to recognition.                                                             |
 | Visual feature models                      | Spatial/visual feature extraction, including CNNs, 3D CNNs, vision Transformers, and related families.                                  |
-| Temporal modeling                          | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                               |
-| Alignment and decoding                     | Frame-to-gloss alignment, CTC, HMMs, segmentation, decoding, and related sequence recognition approaches.                               |
+| Temporal approaches                        | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                               |
+| Alignment approaches                       | Frame-to-gloss alignment, CTC, HMMs, segmentation, decoding, and related sequence recognition approaches.                               |
 | Learning strategies and knowledge transfer | Explored pretraining, self-supervision, weak supervision, distillation, and cross-language or cross-domain transfer.                    |
 | Data augmentation                          | Spatial/temporal transformations, synthetic training data, and analysis of their benefits or limitations.                               |
 | Language models                            | Discussed a concrete role of LLM's in recognition, decoding, correction, or training.                                                   |
