@@ -50,38 +50,33 @@ Use the following fields:
 | Paper ID, title, and link           | Use an author–year identifier; reproduce a DOI or URL only if it appears in the PDF.                                                                                                                       |
 | Authors                             | Authors as stated in the paper.                                                                                                                                                                            |
 | Publication year and venue          | Distinguish publication year from online-first dates when relevant; flag ambiguity.                                                                                                                        |
-| Paper type                          | Survey/review, original research, or mixed; describe the evidence.                                                                                                                                         |
 | Literature coverage period          | Years covered and search cutoff date, if reported. Do not infer these from the oldest and newest references.                                                                                               |
 | Tasks and CSLR relevance            | Tasks addressed and whether CSLR is primary, substantive secondary, mentioned only, or absent.                                                                                                             |
 | Main emphasis                       | One sentence describing what receives the most analytical attention.                                                                                                                                       |
-| Review methodology                  | Author-stated review type; databases, queries, eligibility criteria, screening procedure, and PRISMA usage if reported. Distinguish the authors’ label from the procedure actually described.              |
 | Number of included primary studies  | Report the explicit count and its scope: entire review or CSLR subset. Do not substitute bibliography length. If counting a clearly enumerated set yourself, label it as your count and explain the basis. |
 | Number of previous surveys compared | Record separately from primary studies. State whether explicitly reported or counted from a specific comparison table.                                                                                     |
 | Sign languages                      | Languages covered, distinguishing those relevant to CSLR when possible.                                                                                                                                    |
-| Datasets/corpora                    | Identify major datasets compared or repeatedly analyzed; distinguish CSLR resources from resources for other tasks. If the list is selective, say so.                                                      |
+| Input data and modalities           | RGB, depth, skeleton/keypoints, optical flow, sensor inputs, and multimodal combinations.                                                                                                                  |
 | Claimed contribution                | Summarize how the authors position the review relative to earlier surveys. Label this as an author claim, not an independently verified novelty finding.                                                   |
 
 ## Step 3 — Fill Table 2: CSLR thematic coverage
 
 Use these fixed categories so that results remain comparable across papers:
 
-| Category                                   | What qualifies as relevant content                                                                                                       |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Corpora and sign languages                 | Comparison of datasets by language, size, vocabulary, signers, recording conditions, availability, or limitations.                       |
-| Annotation and task formulation            | Gloss annotations, temporal boundaries, supervision granularity, and distinctions between recognition and translation.                   |
-| Input data and modalities                  | RGB, depth, skeleton/keypoints, optical flow, sensor inputs, and multimodal combinations.                                                |
-| Manual and non-manual cues                 | Hands, body, face, mouth, and their contributions to recognition.                                                                        |
-| Visual feature models                      | Spatial/visual feature extraction, including CNNs, 3D CNNs, vision Transformers, and related families.                                   |
-| Temporal modeling                          | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                                |
-| Alignment and decoding                     | Frame-to-gloss alignment, CTC, HMMs, segmentation, decoding, and related sequence recognition approaches.                                |
-| Learning strategies and knowledge transfer | Pretraining, self-supervision, weak supervision, distillation, and cross-language or cross-domain transfer.                              |
-| Data augmentation                          | Spatial/temporal transformations, synthetic training data, and analysis of their benefits or limitations.                                |
-| Language models and LLMs                   | Their concrete role in recognition, decoding, correction, or training. Explicitly distinguish conventional language models from LLMs.    |
-| Generative models                          | Their role in CSLR or its training pipeline. Explicitly identify whether diffusion models are analyzed, merely mentioned, or not found.  |
-| Evaluation and comparability               | WER or other metrics, benchmark protocols, dataset splits, and whether reported results are comparable.                                  |
-| Generalization and practical limitations   | Unseen signers, domains or languages, coarticulation, data scarcity, robustness, computational demands, latency, and online recognition. |
+| Category                                   | What qualifies as relevant content                                                                                                      |
+| ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Data acquisition methods                   | Discussed data acquisition methods                                                                                                      |
+| CSLR challenges                            | Identified current CSLR challenges                                                                                                      |
+| Manual and non-manual cues                 | Discussed hands, body, face, mouth, and their contributions to recognition.                                                             |
+| Visual feature models                      | Spatial/visual feature extraction, including CNNs, 3D CNNs, vision Transformers, and related families.                                  |
+| Temporal modeling                          | Modeling sequences and motion using RNNs/LSTMs, temporal convolutions, Transformers, or other approaches.                               |
+| Alignment and decoding                     | Frame-to-gloss alignment, CTC, HMMs, segmentation, decoding, and related sequence recognition approaches.                               |
+| Learning strategies and knowledge transfer | Explored pretraining, self-supervision, weak supervision, distillation, and cross-language or cross-domain transfer.                    |
+| Data augmentation                          | Spatial/temporal transformations, synthetic training data, and analysis of their benefits or limitations.                               |
+| Language models                            | Discussed a concrete role of LLM's in recognition, decoding, correction, or training.                                                   |
+| Generative models                          | Their role in CSLR or its training pipeline. Explicitly identify whether diffusion models are analyzed, merely mentioned, or not found. |
 
-Categories may overlap when justified. For example, synthetic-data generation may support both “Generative models” and “Data augmentation,” but explain the distinct aspect assessed in each.
+Categories may overlap when justified.
 
 ### Coverage scoring
 
@@ -103,24 +98,23 @@ Apply the following constraints:
 - For generative models, state **diffusion-model status separately**. General generative-model coverage does not imply diffusion-model coverage.
 - For `0`, write “Not found after full-text inspection.” Cite the closest relevant sections inspected where useful, but do not pretend that a single page proves absence.
 
-
-
 # Analysis: [Paper title]
 
 **Authors:** [...]
 **Year:** [...]
 **Paper type and CSLR relevance:** [...]
 **Citation convention:** Page references use 1-based PDF page numbers.
-**Access or extraction limitations:** [Describe limitations, or “None identified.”]
 
 ## 1. Survey characteristics
 
 ### Paper ID, title, and link
+
 **Value:** [Concise value ready to enter into the comparison table.]
 **Explanation:** [One or two sentences explaining the value.]
 **Evidence:** [PDF p. X, §Y, Table Z]
 
 ### Authors
+
 **Value:** [...]
 **Explanation:** [...]
 **Evidence:** [...]
@@ -130,11 +124,12 @@ Apply the following constraints:
 ## 2. CSLR thematic coverage
 
 ### Corpora and sign languages
+
 **Value:** [0 / 1 / 2 / ?] — [Not found / Mentioned or described / Substantively analyzed / Uncertain or not assessable]
 **Explanation:** [One or two sentences describing what is covered, its task scope, and why this score applies.]
 **Evidence:** [PDF p. X, §Y, Table Z]
 
-[Continue with all 13 categories specified for Table 2, in the original order.]
+[Continue with all categories specified for Table 2, in the original order.]
 
 ## 3. Brief synthesis
 

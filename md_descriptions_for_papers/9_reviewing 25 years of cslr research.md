@@ -1,233 +1,55 @@
-# Analysis: Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects
+**Analysis: Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects**
 
 **Authors:** Sarah Alyami, Hamzah Luqman, Mohammad Hammoudeh.  
 **Year:** 2024.  
-**Paper type and CSLR relevance:** Survey/review; CSLR is the primary topic.  
-**Citation convention:** References use 1-based PDF page numbers, which match the printed page numbers where shown.  
-**Access or extraction limitations:** All 32 pages were accessible, including references, tables, and figures. No appended supplementary material was found. Several internal inconsistencies affect dates, dataset statistics, and performance values; these are flagged below.
-
-## 1. Survey characteristics
-
-### Paper ID, title, and link
-
-**Value:** Alyami et al. (2024). *Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects*. [DOI: 10.1016/j.ipm.2024.103774](https://doi.org/10.1016/j.ipm.2024.103774).
-
-**Explanation:** The title and DOI appear on the first page.
-
-**Evidence:** [PDF p. 1]
-
-### Authors
-
-**Value:** Sarah Alyami; Hamzah Luqman; Mohammad Hammoudeh.
-
-**Explanation:** Names follow the paper’s author list.
-
-**Evidence:** [PDF p. 1]
-
-### Publication year and venue
-
-**Value:** 2024; *Information Processing and Management*, volume 61, article 103774. Available online 24 May 2024.
-
-**Explanation:** The publication year and online availability date are explicitly stated; acceptance was 8 May 2024.
-
-**Evidence:** [PDF p. 1]
-
-### Paper type
-
-**Value:** Survey/review with taxonomy, literature synthesis, and comparisons of published results.
-
-**Explanation:** The paper reviews 126 studies and classifies existing approaches. Its performance tables summarize cited studies rather than experiments on a newly proposed model.
-
-**Evidence:** [PDF p. 1, Abstract]; [PDF pp. 20–21, Table 8]; [PDF p. 26, §7]
-
-### Literature coverage period
-
-**Value:** **1997–2023 according to Table 1; reported search cutoff: March 2024. Exact period is internally inconsistent.**
-
-**Explanation:** The authors describe approximately 25 years of research, but Table 8 includes studies dated 2024. Preserve the stated period and cutoff separately rather than silently resolving the discrepancy.
-
-**Evidence:** [PDF p. 3, §2, Table 1]; [PDF pp. 20–21, Table 8]
-
-### Tasks and CSLR relevance
-
-**Value:** **CSLR primary**; isolated SLR, fingerspelling, and SLT provide context, pretraining resources, or related multitask settings.
-
-**Explanation:** CSLR is formulated as video-to-gloss-sequence prediction. SLT is distinguished from recognition, although joint CSLR–SLT systems are included; the stated screening exclusions cover isolated SLR, translation-focused studies, and sign spotting.
-
-**Evidence:** [PDF p. 3, §§2–3]; [PDF p. 4, §3]; [PDF p. 18, §4.2.7]
-
-### Main emphasis
-
-**Value:** Classification and comparison of CSLR methods, especially deep-learning spatial, temporal, and alignment components, alongside datasets, acquisition methods, modalities, and sign cues.
-
-**Explanation:** The architecture review and comparative tables receive substantial attention, followed by synthesis of performance and practical limitations.
-
-**Evidence:** [PDF pp. 14–19, §4]; [PDF pp. 20–24, Tables 8–9, §5]
-
-### Review methodology
-
-**Value:** Author-described comprehensive review; database search with a brief exclusion procedure, but incomplete reproducibility reporting.
-
-**Explanation:** Sources are Google Scholar, ProQuest, Scopus, and “IEEE Explore,” as written. The authors report reducing 306 papers to 126 by excluding isolated SLR, studies outside recognition such as translation and spotting, and non-English publications; exact queries, deduplication, screening stages/reviewers, quality appraisal, and PRISMA usage are **Not reported**.
-
-**Evidence:** [PDF p. 3, §2]; [PDF p. 26, §7]
-
-### Number of included primary studies
-
-**Value:** **126 studies**, explicitly reported for the CSLR review.
-
-**Explanation:** This is the authors’ included-study count, not the bibliography length. It should be recorded as a reported count rather than an independently verified set of 126 uniquely eligible primary studies.
-
-**Evidence:** [PDF p. 1, Abstract]; [PDF p. 3, §2]; [PDF p. 26, §7]
-
-### Number of previous surveys compared
-
-**Value:** **7 previous surveys** — extraction count from Table 1, excluding “Our survey.”
-
-**Explanation:** Table 1 compares seven earlier reviews across seven coverage features. This count is separate from the 126 reviewed studies.
-
-**Evidence:** [PDF p. 3, Table 1]
-
-### Sign languages
-
-**Value:** **16 sign languages reported across reviewed CSLR studies**, with German, Chinese, and American Sign Language receiving the most attention.
-
-**Explanation:** Additional examples include Arabic, Indian, Greek, Taiwanese, Spanish, Italian, Irish, Persian, Turkish, French, Dutch, and Japanese sign languages. Dataset coverage also includes Russian and a “Kazakh-Russian” label; these resource labels should not be conflated with the authors’ study-level count.
-
-**Evidence:** [PDF p. 19, §5]; [PDF p. 22, Fig. 9]; [PDF p. 16, Table 7]; [PDF p. 7, Table 2]
-
-### Datasets/corpora
-
-**Value:** Principal comparison resources: **PHOENIX2014, PHOENIX2014T, SIGNUM, CSL, CSL-Daily, and continuous GrSL**.
-
-**Explanation:** This is a selective list of repeatedly analyzed CSLR benchmarks; Table 2 additionally includes RWTH-BOSTON-104, TheRuSLan, ArabSign, FluentSigners-50, ASL-Homework, Scene-PHOENIX, and others. How2Sign is discussed as an SLT resource, while Kinetics-400, Sports1M, and UCF101 appear as action-recognition pretraining sources rather than CSLR benchmarks.
-
-**Evidence:** [PDF pp. 6–7, §3.2, Table 2]; [PDF pp. 20–21, Table 8]; [PDF p. 19, §5]; [PDF pp. 22–23, §5]
-
-### Claimed contribution
-
-**Value:** **Author claim:** a comprehensive CSLR-focused historical review, seven-dimensional taxonomy, detailed deep-learning classification, and identification of research gaps.
-
-**Explanation:** The authors position the review against earlier surveys that they describe as narrower in task coverage, acquisition methods, historical coverage, or treatment of deep learning. This is their novelty claim, not an independently verified finding.
-
-**Evidence:** [PDF p. 2, §1]; [PDF p. 3, §2, Table 1]; [PDF p. 26, §7]
-
-## 2. CSLR thematic coverage
-
-Scores describe the depth of this survey’s CSLR coverage, not the reliability of every underlying claim.
-
-### Corpora and sign languages
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** Table 2 compares language, vocabulary, sentences, signers, samples, modalities, and domains. The prose examines recording conditions, signer diversity, restricted vocabularies, public availability, and differences between evaluation splits.
-
-**Evidence:** [PDF pp. 5–7, §3.2, Table 2]; [PDF p. 19, §5]; [PDF p. 25, §6.1]
-
-### Annotation and task formulation
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** The paper defines order-preserving video-to-gloss recognition, distinguishes it from translation, and connects missing temporal boundaries to alignment-based training. It discusses gloss annotations and optional sentence translations, although annotation procedures and quality control receive little attention.
-
-**Evidence:** [PDF pp. 3–4, §3]; [PDF p. 6, §3.2]; [PDF pp. 12–13, §3.6]
-
-### Input data and modalities
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** The survey compares vision and sensor acquisition, RGB, depth, skeleton representations, optical flow, and multimodal combinations. It discusses tradeoffs involving practicality, noise, visual detail, robustness, and computational cost.
-
-**Evidence:** [PDF pp. 8–11, §§3.3–3.4, Tables 3–5]; [PDF pp. 21–22, §5]
-
-### Manual and non-manual cues
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** Hands, face, mouth, head motion, body pose, and gaze are classified and connected to recognition roles. The survey synthesizes full-frame versus localized-cue approaches and identifies difficulties in capturing subtle cues and combining them.
-
-**Evidence:** [PDF pp. 10–13, §3.5, Table 6]; [PDF p. 22, §5]; [PDF p. 26, §6.2]
-
-### Visual feature models
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** Coverage includes handcrafted representations, CNNs, 3D CNNs, GCNs, ViTs, and hybrid architectures. The survey classifies spatial backbones and discusses feature detail, modality representation, memory requirements, and reported recognition performance.
-
-**Evidence:** [PDF pp. 14–19, §§4.1–4.2]; [PDF p. 22, §5]; [PDF p. 24, Table 9]
-
-### Temporal modeling
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** RNN/LSTM/BLSTM, temporal convolutions, fully convolutional networks, and Transformers are compared in terms of contextual modeling and sequence processing. The synthesis addresses receptive-field limitations, variable sign lengths, and constraints on online recognition.
-
-**Evidence:** [PDF pp. 15–18, §§4.2.2–4.2.7]; [PDF pp. 22–23, §5]; [PDF p. 24, Table 9]
-
-### Alignment and decoding
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** HMM, CTC, DTW, reinforcement learning, and transducer approaches are discussed. The survey explains alignment without explicit boundaries, illustrates CTC decoding, and compares strategies addressing independence assumptions, overfitting, and alignment quality.
-
-**Evidence:** [PDF pp. 12–14, §3.6, Fig. 7]; [PDF pp. 14–15, §4.1]; [PDF p. 19, §4.2.9]; [PDF pp. 23–24, §5, Table 9]
-
-### Learning strategies and knowledge transfer
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** The review examines iterative pseudo-label training, isolated-sign and action-recognition pretraining, self-mutual knowledge distillation, multilingual training, and cross-lingual transfer, including limitations. These support the score; self-supervised learning does not receive a comparable dedicated synthesis.
-
-**Evidence:** [PDF pp. 15–17, §§4.2.2–4.2.4]; [PDF p. 22, §5]; [PDF pp. 25–26, §6.2]
-
-### Data augmentation
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** The survey explains paired video–text edits in Cross Modal Augmentation and the language-model-assisted extension PA-CMA, discussing their purpose and limitations. Background augmentation and augmentation for signer variability are also addressed, although there is no comprehensive taxonomy of spatial and temporal transformations.
-
-**Evidence:** [PDF p. 6, §3.2]; [PDF p. 16, §4.2.2]; [PDF p. 23, §5]; [PDF p. 25, §6.2]
-
-### Language models and LLMs
-
-**Value:** **2 — Substantively analyzed, principally for conventional and BERT-based language modeling**
-
-**Explanation:** **Conventional LM status:** n-gram and RNN models have concrete recognition/training roles; BERT-based gloss modeling is also discussed, including contextual learning, augmentation, and reported gains. **LLM status:** an explicit discussion of large language models as a distinct category was not found after full-text inspection; BERT coverage should be recorded explicitly rather than automatically treated as broad LLM coverage.
-
-**Evidence:** [PDF pp. 16–17, §§4.2.2–4.2.4]; [PDF pp. 18–19, §§4.2.7–4.2.8]; [PDF p. 26, §6.2]
-
-### Generative models
-
-**Value:** **1 — Mentioned/described**
-
-**Explanation:** SLRGAN is described as generating glosses in a recognition–translation pipeline, and DBN is identified as a generative model used for WiFi feature extraction; GAN approaches also appear in the performance table. These are scattered descriptions rather than a substantive generative-model synthesis; **diffusion models: Not found after full-text inspection**.
-
-**Evidence:** [PDF p. 18, §4.2.7]; [PDF p. 19, §4.2.9]; [PDF pp. 20–21, Table 8]
-
-### Evaluation and comparability
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** The paper explains WER, distinguishes it from accuracy and translation-oriented BLEU, separates several benchmark splits, and compares published results. It discusses private-dataset comparability and additional training data, but provides neither a unified experimental reevaluation nor a systematic audit of all protocol differences.
-
-**Evidence:** [PDF pp. 3–4, §3]; [PDF p. 6, §3.2]; [PDF pp. 20–21, Table 8]; [PDF pp. 23–24, §5]
-
-### Generalization and practical limitations
-
-**Value:** **2 — Substantively analyzed**
-
-**Explanation:** Coverage includes signer variation, unseen sentences, coarticulation, movement epenthesis, limited data and domains, background variation, computational demands, and online recognition. Data-centric and model-centric gaps organize these limitations into a broader synthesis.
-
-**Evidence:** [PDF pp. 4–5, §3.1]; [PDF pp. 23–24, §5]; [PDF pp. 25–26, §§6.1–6.2]
-
-## 3. Brief synthesis
-
-- **Main emphasis:** A broad CSLR taxonomy with substantial coverage of architectures, alignment, acquisition, modalities, sign cues, and benchmark results. Learning strategies and language modeling are already meaningfully covered, so they should not be coded as absent.
-
-- **Coverage limitations:** Generative models receive only scattered descriptions, and diffusion models and an explicit LLM-focused synthesis were not found. Search reproducibility, annotation quality assurance, and systematic evaluation-protocol auditing are limited.
-
-- **Verification needed:** Preserve several unresolved inconsistencies:
-  - **Coverage dates:** 1997–2023 in Table 1 versus a March 2024 cutoff and 2024 studies. [PDF p. 3, §2, Table 1]; [PDF pp. 20–21, Table 8]
-  - **Dataset statistics:** PHOENIX2014 vocabulary is given as 2,048 in Table 2 but 1,389 in §6.1. [PDF p. 7, Table 2]; [PDF p. 25, §6.1]
-  - **Performance values:** Cross-Ling’s PHOENIX2014 WER is 16.7 in Table 8 but 16.8 in §5; PHOENIX2014T is 18.5 in the table but 18.6 in the prose. [PDF pp. 20–21, Table 8]; [PDF p. 23, §5]
-  - **Task eligibility:** Despite excluding translation-focused studies, Table 8 includes “Pose-SLT,” whose reference is titled *Neural sign language translation based on human keypoint estimation*. Its eligibility as CSLR evidence remains **Unclear** from this survey alone. [PDF p. 3, §2]; [PDF p. 21, Table 8]; [PDF p. 29, References]
+**Paper type and CSLR relevance:** Survey/review; **CSLR is the primary topic**. It synthesizes published research rather than presenting a new recognition model. [PDF p. 1, Abstract; p. 26, §7]
+
+**Citation convention:** References use 1-based PDF page numbers, which match the printed page numbers. All 32 pages were inspected; no inaccessible sections were identified. Only the attached PDF was used.
+
+Source: 9_reviewing 25 years of cslr research.pdf
+
+**1. Survey characteristics**
+
+| Field                               | Extracted value and explanation                                                                                                                                                                                                                                                                                                                                                                                                                   | Evidence                                                        |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| Paper ID, title, and link           | **Alyami et al. (2024)** — _Reviewing 25 years of continuous sign language recognition research: Advances, challenges, and prospects_. [DOI: 10.1016/j.ipm.2024.103774](https://doi.org/10.1016/j.ipm.2024.103774), reproduced from the PDF.                                                                                                                                                                                                      | [PDF p. 1]                                                      |
+| Authors                             | **Sarah Alyami; Hamzah Luqman; Mohammad Hammoudeh.**                                                                                                                                                                                                                                                                                                                                                                                              | [PDF p. 1]                                                      |
+| Publication year and venue          | **2024, Information Processing and Management, volume 61, article 103774.** Available online **24 May 2024**; accepted **8 May 2024**.                                                                                                                                                                                                                                                                                                            | [PDF p. 1, journal header and publication information]          |
+| Literature coverage period          | **1997–2023 according to Table 1; publications reviewed through March 2024 according to §2.** These statements are not fully consistent; Table 8 explicitly includes 2024 studies. Preserve both the stated period and cutoff rather than silently selecting one.                                                                                                                                                                                 | [PDF p. 3, §2, Table 1; pp. 20–21, Table 8]                     |
+| Tasks and CSLR relevance            | **CSLR: primary.** Covers continuous video/sensor sequences, gloss recognition, temporal alignment, signer independence, and unseen-sentence recognition. SLT is distinguished from CSLR and discussed where joint recognition–translation systems are relevant; isolated recognition appears principally as background or pretraining.                                                                                                           | [PDF pp. 3–4, §3; p. 17, §§4.2.2–4.2.4; p. 18, §4.2.7]          |
+| Main emphasis                       | **Taxonomy and comparative analysis of CSLR systems**, spanning acquisition devices, modalities, linguistic cues, traditional and deep learning methods, datasets, and reported performance. Deep models receive additional analysis by spatial, temporal, and alignment components.                                                                                                                                                              | [PDF p. 5, Fig. 3; pp. 14–24, §§4–5, Tables 7–9]                |
+| Number of included primary studies  | **126 studies, explicitly reported for the CSLR review**, reduced from **306 initially retrieved papers**. This is the authors’ inclusion count, not a count of bibliography entries or benchmark-table rows.                                                                                                                                                                                                                                     | [PDF p. 1, Abstract; p. 3, §2; p. 26, §7]                       |
+| Number of previous surveys compared | **7 previous surveys — my count of Table 1**, excluding the “Our survey” row. The accompanying discussion addresses the same seven reviews.                                                                                                                                                                                                                                                                                                       | [PDF p. 3, §2, Table 1]                                         |
+| Sign languages                      | **German and Chinese dominate, followed by American.** Fig. 9 additionally lists Indian, Arabic, Greek, British, Taiwanese, Spanish, Italian, Irish, Persian, Dutch, Turkish, Japanese, Korean, and Russian. **Count discrepancy:** §5 states 16 languages, whereas Fig. 9 contains **17 labels**. French also appears in Table 7; Table 2 labels FluentSigners-50 “Kazakh-Russian.” A single reconciled language count is therefore **unclear**. | [PDF p. 7, Table 2; p. 16, Table 7; p. 19, §5; p. 22, Fig. 9]   |
+| Input data and modalities           | **RGB, depth, skeleton/keypoints, optical flow, and sensor signals**, including glove measurements, EMG, IMUs, smartwatches, WiFi, RF/RFID, and radar. Discusses RGB–depth and RGB–skeleton combinations, pose-guided crops, and textual/gloss information used in training.                                                                                                                                                                      | [PDF pp. 8–11, §§3.3–3.4, Tables 3–5; pp. 18–19, §§4.2.7–4.2.8] |
+| Claimed contribution                | **Author claim:** a comprehensive CSLR-focused historical review covering vision and sensor approaches, a seven-dimensional taxonomy, detailed classification of deep learning components, and identification of research gaps. The authors position this against earlier surveys with narrower periods, modality coverage, or CSLR treatment; this is **not independently verified novelty**.                                                    | [PDF p. 2, §1; p. 3, §2, Table 1; p. 26, §7]                    |
+
+**Methodological reporting:** The authors name Google Scholar, ProQuest, Scopus, and “IEEE Explore” as sources, and report excluding isolated SLR, non-recognition topics such as translation and spotting, and non-English studies. Exact search strings, deduplication procedures, reviewer arrangements, and a formal quality-assessment procedure are **not reported**, limiting search reproducibility. [PDF p. 3, §2; full-text inspection]
+
+**2. CSLR thematic coverage**
+
+Scores: **0** = not found; **1** = mentioned/described; **2** = substantively analyzed; **?** = uncertain/not assessable.
+
+The template’s example also requests **Corpora and sign languages**, although this is absent from its fixed category list. It is included below as an additional row.
+
+| Category                                    |                     Score | Explanation and evidence                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------- | ------------------------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Corpora and sign languages — additional row |                     **2** | Compares datasets by language, vocabulary, sentences, signers, samples, modality, and domain. Discusses evaluation splits, recording conditions, restricted vocabularies, and generalization. This extends beyond a dataset inventory. **Evidence:** [PDF pp. 5–7, §3.2, Table 2; pp. 23–25, §§5–6.1]                                                                                                                                                                                                                                                  |
+| Data acquisition methods                    |                     **2** | Classifies camera-based and sensor-based acquisition and compares practicality, cost, movement restrictions, noise, occlusion, and sensing distance. Includes dataset-recording trends and implications for deployment. **Evidence:** [PDF pp. 8–10, §3.3, Table 3; pp. 19–21, §5]                                                                                                                                                                                                                                                                     |
+| CSLR challenges                             |                     **2** | Explains boundary detection, movement epenthesis, co-articulation, sign dependencies, embedded fingerspelling, and signer variation. Connects these to limitations of recognition systems and separates future gaps into data-centric and model-centric categories. **Evidence:** [PDF pp. 4–5, §3.1; pp. 25–26, §§6.1–6.2]                                                                                                                                                                                                                            |
+| Manual and non-manual cues                  |                     **2** | Analyzes hands, face, mouth, head, body pose, and gaze; compares full-frame representations with cropped regions and pose features. Discusses complementary information, subtle cues, and computational trade-offs. **Evidence:** [PDF pp. 10–13, §3.5, Table 6; p. 22, §5; p. 26, §6.2]                                                                                                                                                                                                                                                               |
+| Visual feature models                       |                     **2** | Reviews handcrafted features, CNNs, 3D CNNs, GCNs, and ViTs, including multi-stream designs. Synthesizes architecture trends, pretraining choices, reported results, and computational limitations. **Evidence:** [PDF pp. 14–19, §§4.1–4.2; p. 22, §5; p. 24, Table 9]                                                                                                                                                                                                                                                                                |
+| Temporal modeling                           |                     **2** | Compares recurrent models, temporal convolutions, fully convolutional approaches, and Transformers. Discusses bidirectional context, online-processing limitations, varying sign duration, and fixed versus multiscale receptive fields. **Evidence:** [PDF pp. 15–18, §§4.2.2–4.2.7; pp. 22–24, §5, Table 9]                                                                                                                                                                                                                                          |
+| Alignment and decoding                      |                     **2** | Explains HMM and CTC alignment, discusses CTC limitations and modified losses, and reviews reinforcement learning, DTW, and transducer alternatives. Coverage includes comparative limitations rather than merely naming methods. **Evidence:** [PDF pp. 12–14, §3.6, Fig. 7; pp. 14–15, §4.1; p. 19, §4.2.9; pp. 23–24, §5, Table 9]                                                                                                                                                                                                                  |
+| Learning strategies and knowledge transfer  |                     **2** | Covers iterative pseudo-label training, isolated-sign and action-recognition pretraining, self-mutual distillation, multilingual learning, and cross-lingual transfer. Discusses benefits and costs, including the dictionary construction and isolated-model training required by the reviewed cross-lingual method. **Evidence:** [PDF pp. 15–17, §§4.2.2–4.2.4; p. 22, §5; pp. 25–26, §6.2]                                                                                                                                                         |
+| Data augmentation                           |                     **2** | Discusses synthetic backgrounds and cross-modal augmentation that edits paired gloss/video sequences, then contrasts CMA with language-model-assisted PA-CMA. Connects augmentation to unseen-sentence recognition and signer robustness. Coverage is substantive for these approaches, but not a comprehensive augmentation taxonomy. **Evidence:** [PDF p. 6, §3.2; p. 16, §4.2.2; p. 23, §5; p. 25, §6.2]                                                                                                                                           |
+| Language models                             | **2 — combined category** | **Conventional/neural LM coverage is substantive:** n-grams, RNN LMs, BERT-based gloss modeling, contextual training, and language-informed augmentation are discussed, including limited gains in one reviewed approach. **LLMs:** BERT is explicitly discussed, but a distinct treatment of large generative/instruction-tuned LLMs is **not found after full-text inspection**. If this column is intended to mean _LLMs only_, record **0** rather than transferring the combined score. **Evidence:** [PDF pp. 16–19, §§4.2.2–4.2.8; p. 26, §6.2] |
+| Generative models                           |                     **1** | Describes SLRGAN’s GAN-based gloss prediction and a DBN used for feature extraction; Table 8 also reports GAN-based systems. These are examples and benchmark entries, without substantive synthesis of generative approaches as a family. **Diffusion models: not found after full-text inspection.** Sign generation is proposed as a topic for future surveys, which does not count as existing CSLR coverage. **Evidence:** [PDF p. 18, §4.2.7; p. 19, §4.2.9; pp. 20–21, Table 8; p. 26, §7]                                                      |
+
+**3. Brief synthesis**
+
+- **Main emphasis:** Broad, technically substantive coverage of CSLR architectures, acquisition, modalities, cues, datasets, and alignment. Cross-lingual learning, augmentation, and language modeling are already covered; describing them as entirely absent would be inaccurate.
+- **Coverage limitations:** Generative models receive descriptive treatment; diffusion models and a distinct modern generative-LLM discussion were not found. Learning strategies and augmentation are distributed across architecture sections rather than organized into dedicated comparative taxonomies.
+- **Verification needed:** Resolve the coverage-date and language-count inconsistencies before using exact counts. Dataset statistics also conflict internally: Phoenix2014 is listed with **2,048 signs** in Table 2 but **1,389** in §6.1. [PDF p. 7, Table 2; p. 25, §6.1] These discrepancies should be flagged rather than corrected using assumptions.
+
+This paper supports identifying limitations in **its own coverage and reporting**; it does not alone establish the need for a new survey.
