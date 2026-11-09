@@ -6,7 +6,7 @@
 
 21 "Expression of Concern: Deep Learning Approaches for Continuous Sign Language Recognition: A Comprehensive Review" EXCLUDE. Duplication
 
-25	A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training Survey. EXCLUDE. It contains 4 pages lol. No tables and grahps. Also its from 2019, too old
+25	A Deep Neural Framework for Continuous Sign Language Recognition by Iterative Training Survey. EXCLUDE. It contains 4 pages. No tables and grahps. Also its from 2019, too old
 
 26	"Quantitative Survey of the State of the Art in Sign Language "Recognition". EXCLUDE. Preprint
 
